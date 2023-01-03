@@ -1,1 +1,0 @@
-# glennlopez.github.io
