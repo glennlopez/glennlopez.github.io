@@ -11,7 +11,8 @@ var textArray = [
     "I build.",
     "I opensource.",
     "I create.",
-    "Always curious."
+    "Always curious.",
+    "Always learning."
 ];
 
 // Speed (in milliseconds) of typing.
