@@ -9,7 +9,7 @@ var textArray = [
     "I design.",
     "I code.",
     "I build.",
-    "I open-source.",
+    "I opensource.",
     "I create.",
     "Always curious."
 ];
