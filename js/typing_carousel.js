@@ -6,11 +6,11 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
-    "I design.",
     "I code.",
+    "I design.",
     "I build.",
-    "I opensource.",
-    "I create.",
+    "I open source.",
+    "I fabricate.",
     "Always curious.",
     "Always learning."
 ];
