@@ -8,7 +8,6 @@ var i = 0,
 var textArray = [
     "I code.",
     "I design.",
-    "I build.",
     "I open source.",
     "I fabricate.",
     "Always curious.",
