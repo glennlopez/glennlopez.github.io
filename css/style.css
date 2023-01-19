@@ -1458,9 +1458,9 @@ body.offcanvas .glenn-nav-toggle {
     filter:drop-shadow(3px 5px 5px rgb(140, 140, 140));
 }
 
-.img-responsive-projects {
+.img-responsive-projects { /* image box */
     width: 100%; 
-    height: 230px; 
+    height: 260px; 
     object-fit: cover;
 }
 
