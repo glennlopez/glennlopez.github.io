@@ -1458,6 +1458,11 @@ body.offcanvas .glenn-nav-toggle {
     filter:drop-shadow(3px 5px 5px rgb(140, 140, 140));
 }
 
+.img-responsive-projects {
+    width: 100%; 
+    height: 230px; 
+    object-fit: cover;
+}
 
 /*Typing Carousel*/
 
