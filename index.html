@@ -142,17 +142,19 @@
     <!-- MAIN JS -->
     <script src="js/main.js"></script>
 
-    <!-- Menu Helper -->
+    <!-- Nav bar auto open -->
     <script>
-        var delayInMilliseconds = 5000; //1 second
+        if ($(window).width() < 800) {
+            var firstToggle = 1000;
 
-        setTimeout(function() {
-            $(document).ready(function() {
-                $('#burger-id').trigger("click");
-            });
-        }, delayInMilliseconds);
+            setTimeout(function() {
+                $(document).ready(function() {
+                    $('#burger-id').trigger("click");
+                });
+            }, firstToggle);
+        }
     </script>
-    <!-- Menu Helper -->
+    <!-- END Nav bar auto open-->
 
     <!-- Typing Carousl-->
     <script src="js/typing_carousel.js"></script>
