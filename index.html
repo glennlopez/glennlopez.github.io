@@ -63,6 +63,13 @@
 <script src="js/respond.min.js"></script>
 <![endif]-->
 
+    <style>
+        div#glenn-main-menu {
+            /* Hide the div */
+            display: none;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -82,6 +89,18 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <script type="text/javascript">
+                var cookie = document.cookie;
+                if (cookie.indexOf('visited=', 0) == -1) {
+                    var expiration = new Date();
+                    expiration.setDate(expiration.getDate()+1);
+                    document.cookie = 'visited=1;expires=' + expiration + ';path=/';
+
+                    var element = document.getElementById('slider');
+                    element.style.display = 'block';
+                }
+            </script>
 
             <div class="glenn-footer">
                 <p><small>&copy; 2018 Glenn Lopez.<br>All Rights Reserved.</span></small></p>
