@@ -1769,3 +1769,33 @@ p.cursor::after {
     box-shadow: 0 35px 90px 4px rgba(0, 0, 0, 0.3), inset 0px 0 0 3px #000;
 }
 
+/*======================
+    Block Quote Style
+=======================*/
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+
+.blockquote {
+    padding: 20px;
+}
+
+.quote {
+    font-size: 1.4rem;
+    max-width: 400px;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+.author {
+    float: right;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.quote-icon {
+    margin-bottom: 10px;
+}
+
+.blockquote hr {
+    margin-top: 50px;
+}
