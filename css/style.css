@@ -1799,3 +1799,28 @@ p.cursor::after {
 .blockquote hr {
     margin-top: 50px;
 }
+
+/*======================
+    Social Icons
+=======================*/
+.glenn-social-icon {
+    width: 5%;
+    min-width: 30px;
+    max-width: 40px;
+    opacity: 0.3;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.glenn-social-icon:hover {
+    opacity: 0.5;
+}
+
+.glenn-social-box {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
