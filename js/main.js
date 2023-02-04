@@ -259,6 +259,13 @@
 		document.querySelectorAll('.cocoen').forEach(function(element){
 			new Cocoen(element);
 		});
+
+		// Random quote generator (about page)
+		var whichToShow = Math.floor(Math.random() * $(".quote-item").length);
+		$(".quote-item")
+			.hide()
+			.eq(whichToShow)
+			.fadeIn(3000);
 	});
 
 
