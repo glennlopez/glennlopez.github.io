@@ -1820,7 +1820,12 @@ p.cursor::after {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    margin-left: auto;
     margin-top: 10px;
     margin-bottom: 20px;
 
 }
+
+/*======================
+    Extra Carousel
+=======================*/
