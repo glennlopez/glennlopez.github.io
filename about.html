@@ -70,16 +70,22 @@
             <h1 id="glenn-logo">
                 <a href="index.html"><img class="spin" src="images/g_logo.png" alt="the J Arrow logo"></a>
             </h1>
+
             <nav id="glenn-main-menu" role="navigation">
                 <ul>
                     <li><a href="store.html">Store</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="https://github.com/glennlopez">Code</a></li>
-                    <li class="glenn-active"><a href="about.html">About</a></li>
-                    <li><a href="icebreaker.html">Icebreakers</a></li>
+                    <li id="nav_about" class="glenn-active"><a href="about.html">About</a></li>
+                    <li id="nav_icebreaker" class="1234"><a href="about.html#icebreakers">Icebreakers</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+
+
+
+
 
             <div class="glenn-footer">
                 <p><small>&copy; 2018 Glenn Lopez.<br>All Rights Reserved.</span></small></p>
@@ -111,7 +117,7 @@
                     </h2>
 
                     <!-- MINI CARD -->
-                    <div class="glenn-flex-wrap">
+                    <div id="about_observe" class="glenn-flex-wrap">
                         <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInBottom">
                             <div class="glenn-card animate-box" data-animate-effect="fadeInBottom">
                                 <h5>Who am I?</h5>
@@ -131,8 +137,8 @@
 
                                     <span style="display: inline-block">As an <a href="https://en.wikipedia.org/wiki/Engineering_technologist" target="_blank">Engineering Technologist</a></span>,
                                     I am proud to bring a diverse and extensive background to the table,
-                                    with experience in Aerospace & Defense, Aviation, Test Engineering, and Electronic Manufacturing.
-                                    Hi! 🖖 I'm Glenn and I approach every opportunity with energy and a positive attitude, eager to learn,
+                                    with experience in <strong>Aerospace & Defense</strong>, <strong>Aviation</strong>, <strong>Test Engineering</strong>, and <strong>Electronic Manufacturing</strong>.
+                                    I approach every opportunity with energy and a positive attitude, eager to learn,
                                     quick to master, and capable of rapidly adapting to changing situations.
 
                                     <!--
@@ -258,7 +264,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="glenn-feature animate-box" data-animate-effect="fadeInLeft">
+                        <div id="icebreakers_observe" class="glenn-feature animate-box" data-animate-effect="fadeInLeft">
                             <div class="glenn-icon">
                                 🧑‍💻
                             </div>
@@ -356,7 +362,6 @@
                                 <h3>Computer Repair</h3>
                                 <p>My first real hobby started in 2005 after getting a certificate in computer repair.
                                     From there, I nerded out on specs, latest hardware, built my first gaming rig, I even ran Crysis on it at 1080p (medium settings).
-
                                 </p>
                             </div>
                         </div>
@@ -399,10 +404,10 @@
 
             <div class="glenn-narrow-content">
                 <div class="row">
-                    <div class="glenn-wide-content  animate-box" data-animate-effect="fadeInLeft">
+                    <div class="glenn-wide-content  animate-box" data-animate-effect="fadeInBottom">
                         <!-- <div class="row"> -->
                         <div class="col-md-4 glenn-staff">
-                            <img style="max-height: 270px; opacity: 90%" src="images/intp.png" alt="image of intp"
+                            <img style="max-height: 270px; " src="images/intp.png" alt="image of intp"
                                  class="img-responsive">
                             <div class="glenn-captionpad">
                                 <h3>Personality</h3>
@@ -414,7 +419,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 glenn-staff">
-                            <img style="max-height: 270px; opacity: 95%"  src="images/drone.png" alt="kid working at work bench"
+                            <img style="max-height: 270px; "  src="images/drone.png" alt="kid working at work bench"
                                  class="img-responsive">
                             <div class="glenn-captionpad">
                                 <h3>Hobbies & Interests</h3>
@@ -431,7 +436,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 glenn-staff">
-                            <img style="max-height: 270px; opacity: 95%" src="images/ambition.png" alt="kid with arms wide open"
+                            <img style="max-height: 270px; " src="images/ambition.png" alt="kid with arms wide open"
                                  class="img-responsive">
                             <div class="glenn-captionpad">
                                 <h3>Goals & Ambition</h3>
@@ -445,10 +450,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
 
             </div>
         </div>
@@ -472,6 +473,28 @@
 
     <!-- MAIN JS -->
     <script src="js/main.js"></script>
+
+    <!-- Class Toggle for Nav selection element -->
+    <script>
+        const elementToObserve1 = document.querySelector("#icebreakers_observe");
+        const elementToObserve2 = document.querySelector("#about_observe");
+
+        const elementToChange1 = document.querySelector("#nav_icebreaker");
+        const elementToChange2 = document.querySelector("#nav_about");
+
+
+        const observer1 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    elementToChange1.classList.add("glenn-active");
+                    elementToChange2.classList.remove("glenn-active");
+                    observer1.unobserve(elementToObserve1);
+                }
+            });
+        });
+        observer1.observe(elementToObserve1);
+    </script>
+    <!-- END Class Toggle for Nav selection element -->
 
 
 </body>
