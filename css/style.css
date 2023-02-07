@@ -1824,22 +1824,38 @@ p.cursor::after {
 /*======================
     Timeline
 =======================*/
-@font-face {
-    font-family: "Open Sans";
-    src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/*
+.timeline-active:active {
+    opacity: 0.8;
+    box-sizing: border-box;
+    border-bottom: 3px solid #ff004d;
+    padding-bottom: 5px;
 }
+*/
 
 .timeline-selector:hover {
     opacity: 0.8;
+    box-sizing: border-box;
+    border-bottom: 3px solid #ff004d;
+    padding-bottom: 5px;
+    cursor: pointer;
 }
+
+.timeline-active {
+    opacity: 0.75;
+    box-sizing: border-box;
+    border-bottom: 3px solid #ff004d;
+    padding-bottom: 5px;
+}
+
 .timeline-selector {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     margin-right: 20px;
     font-size: larger;
     color: black;
-    display: inline-block;
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 .timeline-selector img{
