@@ -1836,16 +1836,11 @@ p.cursor::after {
 
 .timeline-selector:hover {
     opacity: 0.8;
-    box-sizing: border-box;
-    border-bottom: 3px solid #ff004d;
-    padding-bottom: 5px;
     cursor: pointer;
 }
 
 .timeline-active {
-    opacity: 0.75;
-    box-sizing: border-box;
-    border-bottom: 3px solid #ff004d;
+    opacity: 0.5;
     padding-bottom: 5px;
 }
 
@@ -1855,7 +1850,7 @@ p.cursor::after {
     margin-right: 20px;
     font-size: larger;
     color: black;
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .timeline-selector img{
