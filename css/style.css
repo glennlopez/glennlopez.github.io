@@ -1834,6 +1834,13 @@ p.cursor::after {
 }
 */
 
+.timeline-icon img{
+    opacity: 0.5;
+    max-width: 17px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
 .timeline-selector:hover {
     opacity: 0.8;
     cursor: pointer;
