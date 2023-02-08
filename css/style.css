@@ -33,6 +33,14 @@ body {
     }
 }
 
+@media (min-width: 992px) {
+    /*
+    body {
+        font-size: 17px;
+    }
+    */
+}
+
 a {
     color: rgb(231, 86, 125);
     -webkit-transition: 0.5s;
@@ -117,7 +125,7 @@ figure {
 
 @media screen and (max-width: 1200px) {
     #glenn-aside {
-        width: 30%;
+        width: 20%;
     }
 }
 
@@ -276,7 +284,7 @@ figure {
 
 @media screen and (max-width: 1200px) {
     #glenn-main {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -648,6 +656,14 @@ body.offcanvas .glenn-nav-toggle {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (max-width: 1200px) {
+    .glenn-cards .glenn-flex-wrap>div {
+        width: 95%;
+    }
+}
+
+
 
 .glenn-cards .glenn-flex-wrap>div:nth-of-type(1) {
     float: left;
@@ -1818,14 +1834,480 @@ p.cursor::after {
 
 .glenn-social-box {
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-left: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-
+    margin: 10px auto 20px;
 }
+
+
+
+
+/*======================
+    Career Stats
+=======================*/
+.career-stats-box {
+    display: block;
+    align-items: center;
+    background-color: #737373;
+    width: 65%;
+    padding-top: 15px;
+    margin: -30px auto 0;
+    padding-bottom: 17px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .career-stats-box {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .career-stats-box {
+        width: 100%;
+    }
+}
+
+.career-stats-number {
+    font-size: 1.8em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.career-stats-desc {
+    font-size: 0.6em;
+    font-weight: lighter;
+    display: inline-block;
+    text-align: center;
+}
+
+
 
 /*======================
     Timeline
 =======================*/
+
+/*
+.timeline-active:active {
+    opacity: 0.8;
+    box-sizing: border-box;
+    border-bottom: 3px solid #ff004d;
+    padding-bottom: 5px;
+}
+*/
+
+.timeline-icon img{
+    opacity: 0.5;
+    max-width: 17px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+.timeline-selector:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.timeline-active {
+    opacity: 0.5;
+    padding-bottom: 5px;
+}
+
+.timeline-selector {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: larger;
+    color: black;
+    opacity: 0.5;
+}
+
+.timeline-selector img{
+    max-width: 23px;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+.timeline-subtext-glenn {
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    font-size: small;
+    font-style: italic;
+    color: #a5a5a5;
+}
+
+/* ================ The Timeline ================ */
+
+
+.timeline {
+    position: relative;
+    width: 660px;
+    margin: 0 auto;
+    padding: 1em 1em;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 920px) { /* Tablets - Vertical */
+    .timeline {
+        width: 600px;
+    }
+}
+
+
+.timeline:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: ' ';
+    display: block;
+    width: 6px;
+    height: 100%;
+    margin-left: -3px;
+    background: #7f7f7f;
+    background: -moz-linear-gradient(top, rgb(180,180,180, 0) 0%, rgb(97, 97, 97) 8%, rgb(180,180,180) 92%, rgb(180,180,180,0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+    background: -webkit-linear-gradient(top, rgb(180,180,180,0) 0%, rgb(180,180,180) 8%, rgb(180,180,180) 92%, rgb(180,180,180,0) 100%);
+    background: -o-linear-gradient(top, rgb(180,180,180,0) 0%, rgb(180,180,180) 8%, rgb(180,180,180) 92%, rgb(180,180,180,0) 100%);
+    background: -ms-linear-gradient(top, rgb(180,180,180,0) 0%, rgb(180,180,180) 8%, rgb(180,180,180) 92%, rgb(180,180,180,0) 100%);
+    background: linear-gradient(to bottom, rgb(180,180,180,0) 0%, rgb(180,180,180) 8%, rgb(180,180,180) 92%, rgb(180,180,180,0) 100%);
+
+    /* z-index: 1; */
+}
+
+.timeline li {
+    /* padding: 1em 0; */
+}
+
+.timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.direction-l {
+    position: relative;
+    width: 280px;
+    float: left;
+    text-align: right;
+}
+@media screen and (max-width: 920px) {
+    .direction-l {
+        width: 253px;
+    }
+}
+
+.direction-r {
+    position: relative;
+    width: 280px;
+    float: right;
+}
+
+@media screen and (max-width: 920px) {
+    .direction-r {
+        width: 254px;
+    }
+}
+
+.flag-wrapper {
+    position: relative;
+    display: inline-block;
+
+    text-align: center;
+}
+
+.flag {
+    position: relative;
+    display: inline;
+    background: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.direction-l .flag {
+    -webkit-box-shadow: -1px 2px 3px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: -1px 2px 3px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    box-shadow: -1px 2px 3px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-r .flag {
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: #F4F5F5;
+    border-radius: 10px;
+    border: 4px solid #7f7f7f;
+    z-index: 10;
+}
+
+@media screen and (max-width: 920px) {
+
+}
+
+.direction-l .flag.xl:before {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: #F4F5F5;
+    border-radius: 20px;
+    border: 4px solid #7f7f7f;
+    z-index: 10;
+}
+
+.direction-r .flag:before {
+    left: -40px;
+}
+
+.direction-l .flag:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -8px;
+    border: solid transparent;
+    border-left-color: rgb(248,248,248);
+    border-width: 8px;
+    pointer-events: none;
+}
+
+.direction-r .flag:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -8px;
+    border: solid transparent;
+    border-right-color: rgb(248,248,248);
+    border-width: 8px;
+    pointer-events: none;
+}
+
+.flag.wbg {
+    /*
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    */
+}
+
+
+.time-wrapper {
+    display: inline;
+
+    line-height: 1em;
+    font-size: 0.66666em;
+    color: rgb(250,80,80);
+    vertical-align: middle;
+}
+
+.direction-l .time-wrapper {
+    float: left;
+}
+
+.direction-r .time-wrapper {
+    float: right;
+}
+
+.time {
+    display: inline-block;
+    padding: 4px 6px;
+    background: rgb(248,248,248);
+}
+
+.desc {
+    margin: 1em 0.75em 0 0;
+
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.direction-r .desc {
+    margin: 1em 0 0 0.75em;
+}
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px) {
+
+    .timeline {
+        width: 100%;
+        padding: 4em 0 1em 0;
+    }
+
+    .timeline li {
+        padding: 2em 0;
+    }
+
+    .direction-l,
+    .direction-r {
+        float: none;
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .flag-wrapper {
+        text-align: center;
+    }
+
+    .flag {
+        background: rgb(255,255,255);
+        z-index: 15;
+    }
+
+    .direction-l .flag:before,
+    .direction-r .flag:before {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        content: ' ';
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin-left: -9px;
+        background: #fff;
+        border-radius: 10px;
+        border: 4px solid #7f7f7f;
+        z-index: 10;
+    }
+
+    .direction-l .flag.xl:before {
+        left: calc(50% - 7.5px);
+        top: -35px;
+    }
+
+    .direction-l .flag:after,
+    .direction-r .flag:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -8px;
+        height: 0;
+        width: 0;
+        margin-left: -8px;
+        border: solid transparent;
+        border-bottom-color: rgb(255,255,255);
+        border-width: 8px;
+        pointer-events: none;
+    }
+
+    .time-wrapper {
+        display: block;
+        position: relative;
+        margin: 4px 0 0 0;
+        z-index: 14;
+    }
+
+    .direction-l .time-wrapper {
+        float: none;
+    }
+
+    .direction-r .time-wrapper {
+        float: none;
+    }
+
+    .flag.wbg {
+        background: #fff;
+        -webkit-box-shadow: -1px 2px 3px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: -1px 2px 3px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: -1px 2px 3px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    }
+
+
+    .desc {
+        position: relative;
+        margin: 1em 0 0 0;
+        padding: 1em;
+        background: rgb(245,245,245);
+        -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+        -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+        box-shadow: 0 0 1px rgba(0,0,0,0.20);
+
+        z-index: 15;
+    }
+
+    .direction-l .desc,
+    .direction-r .desc {
+        position: relative;
+        margin: 1em 1em 0 1em;
+        padding: 1em;
+
+        z-index: 15;
+    }
+
+}
+
+.hide {
+    display: none !important;
+}
+
+@media screen and (min-width: 400px ?? max-width: 660px) {
+    .direction-l .desc,
+    .direction-r .desc {
+        margin: 1em 4em 0 4em;
+    }
+
+}
+
+/*======================
+    Website Credits
+=======================*/
+.glenn-website-credits {
+    display: block;
+    align-items: center;
+    width: 63%;
+    margin: 5px auto 0;
+    font-size: small;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .glenn-website-credits {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .glenn-website-credits {
+        width: 100%;
+    }
+}
+
+/*======================
+    Icebreaker
+=======================*/
+
+@media screen and (max-width: 1200px) {
+    .col-md-6 {
+        width: 100%;
+    }
+
+}
