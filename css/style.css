@@ -1860,6 +1860,21 @@ p.cursor::after {
     color: white;
 }
 
+.career-stats-element {
+    width: 12%;
+    text-align: center;
+    line-height: 1;
+    display: inline-block;
+    border-left:2px solid #828282;
+    margin-right: 1px;
+    margin-left: 1px;
+    /* border-image: linear-gradient(to bottom, #727272, #808080, #727272) 3; */
+}
+
+.no-border-left {
+    border-left: none;
+}
+
 @media screen and (max-width: 1200px) {
     .career-stats-box {
         width: 95%;
