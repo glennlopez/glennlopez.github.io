@@ -1973,6 +1973,12 @@ p.cursor::after {
     list-style-type: none;
 }
 
+@media screen and (max-width: 992px) { /* Tablets - Vertical */
+    .timeline {
+        width: 570px;
+    }
+}
+
 @media screen and (max-width: 920px) { /* Tablets - Vertical */
     .timeline {
         width: 600px;
@@ -2027,7 +2033,7 @@ p.cursor::after {
 
 @media screen and (max-width: 992px) {
     .direction-l {
-        width: 283px;
+        width: 238px;
     }
 }
 
@@ -2051,7 +2057,7 @@ p.cursor::after {
 
 @media screen and (max-width: 992px) {
     .direction-r {
-        width: 283px;
+        width: 238px;
     }
 }
 
