@@ -33,14 +33,6 @@ body {
     }
 }
 
-@media (min-width: 992px) {
-    /*
-    body {
-        font-size: 17px;
-    }
-    */
-}
-
 a {
     color: rgb(231, 86, 125);
     -webkit-transition: 0.5s;
@@ -125,7 +117,7 @@ figure {
 
 @media screen and (max-width: 1200px) {
     #glenn-aside {
-        width: 20%;
+        width: 30%;
     }
 }
 
@@ -284,7 +276,7 @@ figure {
 
 @media screen and (max-width: 1200px) {
     #glenn-main {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -527,7 +519,7 @@ body.offcanvas .glenn-nav-toggle {
 @media screen and (max-width: 768px) {
     .glenn-testimonial .item {
         padding-left: 0em;
-        padding-right: 0em;   
+        padding-right: 0em;
         display: block;
         width: 100%;
         height: auto;
@@ -656,14 +648,6 @@ body.offcanvas .glenn-nav-toggle {
     margin-left: auto;
     margin-right: auto;
 }
-
-@media screen and (max-width: 1200px) {
-    .glenn-cards .glenn-flex-wrap>div {
-        width: 95%;
-    }
-}
-
-
 
 .glenn-cards .glenn-flex-wrap>div:nth-of-type(1) {
     float: left;
@@ -1477,8 +1461,8 @@ body.offcanvas .glenn-nav-toggle {
 }
 
 .img-responsive-projects { /* image box */
-    width: 100%; 
-    height: 260px; 
+    width: 100%;
+    height: 260px;
     object-fit: cover;
 }
 
@@ -1496,9 +1480,9 @@ body.offcanvas .glenn-nav-toggle {
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
-    h1 {
-        font-size: 30px;
-    }
+h1 {
+    font-size: 30px;
+}
 
 
 /* Cursor Styling */
@@ -1613,7 +1597,7 @@ p.cursor::after {
 }
 
 .glenn-wide-content .title{
-    width: 80%; 
+    width: 80%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -1837,53 +1821,6 @@ p.cursor::after {
     margin: 10px auto 20px;
 }
 
-
-
-
-/*======================
-    Career Stats
-=======================*/
-.career-stats-box {
-    display: block;
-    align-items: center;
-    background-color: #737373;
-    width: 65%;
-    padding-top: 15px;
-    margin: -30px auto 0;
-    padding-bottom: 17px;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 40%;
-    color: white;
-}
-
-@media screen and (max-width: 1200px) {
-    .career-stats-box {
-        width: 95%;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .career-stats-box {
-        width: 100%;
-    }
-}
-
-.career-stats-number {
-    font-size: 1.8em;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-}
-
-.career-stats-desc {
-    font-size: 0.6em;
-    font-weight: lighter;
-    display: inline-block;
-    text-align: center;
-}
-
-
-
 /*======================
     Timeline
 =======================*/
@@ -1948,13 +1885,6 @@ p.cursor::after {
     list-style-type: none;
 }
 
-@media screen and (max-width: 920px) { /* Tablets - Vertical */
-    .timeline {
-        width: 600px;
-    }
-}
-
-
 .timeline:before {
     position: absolute;
     left: 50%;
@@ -1993,22 +1923,11 @@ p.cursor::after {
     float: left;
     text-align: right;
 }
-@media screen and (max-width: 920px) {
-    .direction-l {
-        width: 253px;
-    }
-}
 
 .direction-r {
     position: relative;
     width: 280px;
     float: right;
-}
-
-@media screen and (max-width: 920px) {
-    .direction-r {
-        width: 254px;
-    }
 }
 
 .flag-wrapper {
@@ -2056,10 +1975,6 @@ p.cursor::after {
     border-radius: 10px;
     border: 4px solid #7f7f7f;
     z-index: 10;
-}
-
-@media screen and (max-width: 920px) {
-
 }
 
 .direction-l .flag.xl:before {
@@ -2269,45 +2184,10 @@ p.cursor::after {
 }
 
 @media screen and (min-width: 400px ?? max-width: 660px) {
+
     .direction-l .desc,
     .direction-r .desc {
         margin: 1em 4em 0 4em;
-    }
-
-}
-
-/*======================
-    Website Credits
-=======================*/
-.glenn-website-credits {
-    display: block;
-    align-items: center;
-    width: 63%;
-    margin: 5px auto 0;
-    font-size: small;
-    text-align: center;
-}
-
-
-@media screen and (max-width: 1200px) {
-    .glenn-website-credits {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .glenn-website-credits {
-        width: 100%;
-    }
-}
-
-/*======================
-    Icebreaker
-=======================*/
-
-@media screen and (max-width: 1200px) {
-    .col-md-6 {
-        width: 100%;
     }
 
 }
