@@ -33,14 +33,6 @@ body {
     }
 }
 
-@media (min-width: 992px) {
-    /*
-    body {
-        font-size: 17px;
-    }
-    */
-}
-
 a {
     color: rgb(231, 86, 125);
     -webkit-transition: 0.5s;
@@ -126,6 +118,12 @@ figure {
 @media screen and (max-width: 1200px) {
     #glenn-aside {
         width: 20%;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    #glenn-aside {
+        width: 25%;
     }
 }
 
@@ -285,6 +283,12 @@ figure {
 @media screen and (max-width: 1200px) {
     #glenn-main {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    #glenn-main {
+        width: 75%;
     }
 }
 
@@ -1937,6 +1941,12 @@ p.cursor::after {
     color: #a5a5a5;
 }
 
+@media screen and (max-width: 825px) {
+    .timeline-subtext-glenn {
+        font-size: x-small;
+    }
+}
+
 /* ================ The Timeline ================ */
 
 
@@ -1951,6 +1961,12 @@ p.cursor::after {
 @media screen and (max-width: 920px) { /* Tablets - Vertical */
     .timeline {
         width: 600px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .timeline {
+        width: 500px;
     }
 }
 
@@ -1999,6 +2015,12 @@ p.cursor::after {
     }
 }
 
+@media screen and (max-width: 825px) {
+    .direction-l {
+        width: 203px;
+    }
+}
+
 .direction-r {
     position: relative;
     width: 280px;
@@ -2008,6 +2030,12 @@ p.cursor::after {
 @media screen and (max-width: 920px) {
     .direction-r {
         width: 254px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .direction-r {
+        width: 203px;
     }
 }
 
@@ -2024,10 +2052,15 @@ p.cursor::after {
     background: #fff;
     padding: 6px 10px;
     border-radius: 5px;
-
     font-size: 24px;
     font-weight: 700;
     text-align: left;
+}
+
+@media screen and (max-width: 825px) {
+    .flag {
+        font-size: 17px;
+    }
 }
 
 .direction-l .flag {
@@ -2146,6 +2179,12 @@ p.cursor::after {
 
     font-size: 16px;
     line-height: 1.5em;
+}
+
+@media screen and (max-width: 825px) {
+    .desc {
+        font-size: 12px;
+    }
 }
 
 .direction-r .desc {
