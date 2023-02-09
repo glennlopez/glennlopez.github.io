@@ -2384,3 +2384,29 @@ p.cursor::after {
     }
 
 }
+
+
+/*======================
+    Skills
+=======================*/
+
+.glabel {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #808080;
+    padding: 2px 7px;
+    font-size: small;
+    color: white;
+    font-weight: bolder;
+}
+.ind-1 { /* DevOps */
+    background-color: #434343;
+}
+
+.glabel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: lightgray;
+}
