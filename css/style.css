@@ -2389,6 +2389,19 @@ p.cursor::after {
 /*======================
     Skills
 =======================*/
+.gtitle-container {
+    margin-bottom: -35px;
+    margin-left: 10%;
+    z-index: 20;
+}
+
+.gtitle {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 90%;
+}
 
 .glabel {
     display: inline-block;
@@ -2415,6 +2428,16 @@ p.cursor::after {
     Projects
 =======================*/
 
+.palert {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 80%;
+    color: #ffecec;
+    background-color: #ff5647;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
 .plabel {
     display: inline;
     border-radius: 5px;
@@ -2424,3 +2447,4 @@ p.cursor::after {
     color: #797979;
     font-weight: normal;
 }
+
