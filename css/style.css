@@ -2410,3 +2410,17 @@ p.cursor::after {
     height: 100px;
     background-color: lightgray;
 }
+
+/*======================
+    Projects
+=======================*/
+
+.plabel {
+    display: inline;
+    border-radius: 5px;
+    background-color: #dfdfdf;
+    padding: 2px 7px;
+    font-size: small;
+    color: #797979;
+    font-weight: normal;
+}
