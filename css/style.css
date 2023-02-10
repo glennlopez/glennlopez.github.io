@@ -2458,6 +2458,16 @@ p.cursor::after {
     font-weight: normal;
 }
 
+.wip-label {
+    display: inline;
+    border-radius: 5px;
+    background-color: #fdd2c2;
+    padding: 2px 7px;
+    font-size: smaller;
+    color: #d56a3d;
+    font-weight: bold;
+}
+
 .ptitle-container {
     position: absolute;
     top: 0;
