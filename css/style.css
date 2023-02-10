@@ -426,6 +426,10 @@ body.offcanvas .glenn-nav-toggle {
     border: 10px solid rgba(0, 0, 0, 0.185);
 }
 
+.work-item a:hover .ptitle-container {
+    background-color: rgb(35, 35, 35);
+}
+
 .glenn-services {
     margin-top: 5px;
 }
@@ -2458,7 +2462,7 @@ p.cursor::after {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(46, 46, 46, 0.8);
     margin-left: 35px;
     margin-top: 20px;
     padding: 5px 10px;
