@@ -2277,7 +2277,7 @@ p.cursor::after {
         margin-left: -8px;
         background: #fff;
         border-radius: 10px;
-        border: 2px solid #7f7f7f;
+        border: 3px solid #7f7f7f;
         z-index: 10;
     }
 
@@ -2344,6 +2344,54 @@ p.cursor::after {
         z-index: 15;
     }
 
+}
+
+.glenn-dp {
+    display: inline;
+    width: 30%;
+    margin-right: 1em;
+    float: left;
+}
+
+@media screen and (max-width: 510px) {
+    .hide-on-small-screen {
+         display: none;
+    }
+    .career-stats-element {
+        width: 15%;
+        /* border-left:none; */
+    }
+
+    .career-stats-desc {
+        font-size: 8px
+    }
+
+    .career-stats-number {
+        font-size: 1.5em;
+        font-weight: bold;
+
+    }
+    .glenn-dp {
+        display: inline;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .hide-on-small-screen {
+        display: none;
+    }
+    .career-stats-element {
+        /* width: 15%; */
+        /* border-left:none; */
+    }
+
+    .career-stats-number {
+        font-size: 1.5em;
+        font-weight: bold;
+
+    }
 }
 
 .hide {
