@@ -2503,7 +2503,7 @@ p.cursor::after {
     display: inline;
     border-radius: 5px;
     background-color: #dfdfdf;
-    padding: 2px 7px;
+    padding: 3px 7px;
     font-size: smaller;
     color: #797979;
     font-weight: normal;
@@ -2535,5 +2535,14 @@ p.cursor::after {
     font-weight: bolder;
 }
 
+/*======================
+    Mobile Landscape Fix
+=======================*/
+
+@media screen and (max-height: 450px) {
+    .hide-on-small-landscape {
+        display: none;
+    }
+}
 
 
