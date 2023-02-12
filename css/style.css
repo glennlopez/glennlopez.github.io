@@ -2534,3 +2534,22 @@ p.cursor::after {
     color: white;
     font-weight: bolder;
 }
+
+
+
+/*======================
+    TEMP - NAV BAR TOGGLE FIX UNDER CONSTRUCTION
+=======================*/
+@media screen and (max-width: 768px) {
+    .glenn-nav-toggle
+    {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .glenn-nav-toggle
+    {
+        margin-top: 50px;
+    }
+}
