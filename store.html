@@ -81,6 +81,15 @@
                 margin-top: 70px;
             }
         }
+
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            0% { opacity: 1; }
+            20% { opacity: 0; }
+            40% { opacity: 1; }
+        }
     </style>
 
 </head>
@@ -130,7 +139,9 @@
             <!-- UNDER CONSTRUCTION NOTICE -->
 
             <div class="palert">
-                <strong> ⚠ WARNING:</strong> Please do not purchase anything at this moment, I am currently running tests on the store.
+                <span class="blink">
+                    <strong> ⚠ WARNING:</strong> Please do not purchase anything at this moment, the store is currently under maintenance.
+                </span>
                 <!-- Please be patient as its just me programming the scripts, layout, design, and content of the entire website. -->
             </div>
             <!-- END UNDER CONSTRUCTION NOTICE -->
