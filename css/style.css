@@ -2510,12 +2510,22 @@ p.cursor::after {
 }
 
 .wip-label {
-    display: inline;
+    display: inline-block;
     border-radius: 5px;
     background-color: #fdd2c2;
     padding: 2px 7px;
     font-size: smaller;
     color: #d56a3d;
+    font-weight: bold;
+}
+
+.opensource-label {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #cfe8b4;
+    padding: 2px 7px;
+    font-size: smaller;
+    color: #4fa43c;
     font-weight: bold;
 }
 
