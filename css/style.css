@@ -2500,7 +2500,7 @@ p.cursor::after {
 }
 
 .plabel {
-    display: inline;
+    display: inline-block;
     border-radius: 5px;
     background-color: #dfdfdf;
     padding: 3px 7px;
@@ -2543,6 +2543,12 @@ p.cursor::after {
 .ptitle {
     color: white;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 500px) {
+    .plabel {
+        padding: 1px 7px;
+    }
 }
 
 /*======================
