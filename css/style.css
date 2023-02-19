@@ -654,6 +654,7 @@ body.offcanvas .glenn-nav-toggle {
 
 .glenn-cards .glenn-flex-wrap>div {
     width: 80%;
+    max-width: 870px;
     /* width: 49.5%; */
     /* margin-right: 1%; */
     background: #fff;
@@ -1862,6 +1863,7 @@ p.cursor::after {
     align-items: center;
     background-color: #737373;
     width: 80%;
+    max-width: 870px;
     padding-top: 15px;
     margin: -30px auto 0;
     padding-bottom: 17px;
@@ -1871,7 +1873,7 @@ p.cursor::after {
 }
 
 .career-stats-element {
-    width: 12%;
+    width: 9%;
     text-align: center;
     line-height: 1;
     display: inline-block;
@@ -2349,7 +2351,7 @@ p.cursor::after {
 .glenn-dp {
     display: inline;
     width: 30%;
-    max-width: 190px;
+    max-width: 250px;
     margin-right: 1em;
     float: left;
 }
