@@ -653,7 +653,7 @@ body.offcanvas .glenn-nav-toggle {
 }
 
 .glenn-cards .glenn-flex-wrap>div {
-    width: 65%;
+    width: 80%;
     /* width: 49.5%; */
     /* margin-right: 1%; */
     background: #fff;
@@ -1861,7 +1861,7 @@ p.cursor::after {
     display: block;
     align-items: center;
     background-color: #737373;
-    width: 65%;
+    width: 80%;
     padding-top: 15px;
     margin: -30px auto 0;
     padding-bottom: 17px;
@@ -2349,6 +2349,7 @@ p.cursor::after {
 .glenn-dp {
     display: inline;
     width: 30%;
+    max-width: 190px;
     margin-right: 1em;
     float: left;
 }
@@ -2416,7 +2417,7 @@ p.cursor::after {
 .glenn-website-credits {
     display: block;
     align-items: center;
-    width: 63%;
+    width: 85%;
     margin: 5px auto 0;
     font-size: small;
     text-align: center;
