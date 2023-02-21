@@ -10,14 +10,7 @@
 }
 */
 
-.blink {
-    animation: blinker 1s linear infinite;
-}
-@keyframes blinker {
-    0% { opacity: 1; }
-    20% { opacity: 0; }
-    40% { opacity: 1; }
-}
+
 
 /* =======================================================
 *
@@ -2592,4 +2585,14 @@ p.cursor::after {
     .hide-on-tablet-screen {
         display: none;
     }
+}
+
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    0% { opacity: 1; }
+    20% { opacity: 0; }
+    40% { opacity: 1; }
 }
