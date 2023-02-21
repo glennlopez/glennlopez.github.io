@@ -2364,6 +2364,7 @@ p.cursor::after {
     float: left;
 }
 
+
 @media screen and (max-width: 510px) {
     .hide-on-small-screen {
          display: none;
@@ -2573,3 +2574,20 @@ p.cursor::after {
 }
 
 
+/*======================
+    Form
+=======================*/
+
+.glenn-contact-form {
+
+    width:50%;
+    vertical-align: top;
+    float: right;
+    /* background-color: #5cb85c; */
+}
+
+@media screen and (max-width: 1000px) {
+    .hide-on-tablet-screen {
+        display: none;
+    }
+}
