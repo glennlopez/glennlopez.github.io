@@ -105,9 +105,11 @@ figure {
 }
 
 #glenn-aside {
+    /* TODO: add max width */
     padding-top: 40px;
     padding-bottom: 40px;
     width: 15%;
+    /* max-width: 240px; */
     position: fixed;
     bottom: 0;
     top: 0;
