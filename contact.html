@@ -131,8 +131,34 @@
             <!--<div class="glenn-narrow-content-top">-->
             <div class="glenn-wide-content">
                 <div class="glenn-profile-pic">
-                        <img src="./images/contact_2.jpg" alt="profile pic" style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 0 20%">
+                    <img
+                            src="./images/contact_2.jpg"
+                            alt="profile pic"
+                            style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 0 20%"
+                    />
                 </div>
+
+                <!-- Random Header Image -->
+                <script>
+                    const images = [
+                        "contact_2.jpg",
+                        "contact_3.jpg",
+                        "hob1.jpg",
+                        "hob8.jpg",
+                        "hob3.jpg",
+                        "hob2.jpg",
+                        "hob9.jpg"
+                        
+                        // add more image file names here
+                    ];
+
+                    const randomIndex = Math.floor(Math.random() * images.length);
+                    const randomImage = images[randomIndex];
+
+                    const profilePic = document.querySelector(".glenn-profile-pic img");
+                    profilePic.src = `./images/${randomImage}`;
+                </script>
+                <!-- END Random Header Image -->
             </div>
             
             <div>
