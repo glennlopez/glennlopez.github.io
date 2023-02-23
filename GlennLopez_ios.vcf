@@ -3,16 +3,18 @@ VERSION:3.0
 PRODID:-//Apple Inc.//iPhone OS 16.2//EN
 N:Lopez;Glenn;;;
 FN:Glenn Lopez
-item1.EMAIL;type=INTERNET;type=pref:glennlopez@gmail.com
-item1.X-ABLabel:Gmail
+item1.EMAIL;type=INTERNET;type=pref:me@glennlopez.com
+item1.X-ABLabel:Email
 item2.TEL;type=pref:(320) 204-5366
-item2.X-ABLabel:Cellular 
-item3.URL;type=pref:https://glennlopez.github.io
-item3.X-ABLabel:_$!<HomePage>!$_
-item4.URL:https://glennlopez.keybase.pub
-item4.X-ABLabel:Contact Page
-item5.URL:https://github.com/glennlopez
-item5.X-ABLabel:GitHub
+item2.X-ABLabel:USA
+item3.TEL;type=pref:(204) 291-0911
+item3.X-ABLabel:Canada
+item4.URL;type=pref:https://github.com/glennlopez
+item4.X-ABLabel:Github
+item5.URL:https://glennlopez.com
+item5.X-ABLabel:Website
+item6.URL:https://www.linkedin.com/in/realglennlopez/
+item6.X-ABLabel:LinkedIn
 PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QBYRXhpZgAATU0AKgAA
  AAgAAgESAAMAAAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAA
  ABLKADAAQAAAABAAABLAAAAAD/7QA4UGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAAA4QklNBCUA

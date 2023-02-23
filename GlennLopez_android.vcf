@@ -2,11 +2,12 @@ BEGIN:VCARD
 VERSION:2.1
 N:Lopez;Glenn;;;
 FN:Glenn Lopez
-TEL;CELL:320-204-5366
-EMAIL;X-Personal:glennlopez@gmail.com
-URL:https://glennlopez.github.io
-URL:https://glennlopez.keybase.pub
+TEL;USA:320-204-5366
+TEL;Canada:204-291-0911
+EMAIL;Business:me@glennlopez.com
 URL:https://github.com/glennlopez
+URL:https://glennlopez.com
+URL:https://www.linkedin.com/in/realglennlopez/
 PHOTO;ENCODING=BASE64;JPEG:/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEU
  AAQEAAAIYAAAAAAIQAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAA
  AAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
