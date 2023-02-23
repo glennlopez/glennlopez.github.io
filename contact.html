@@ -183,9 +183,10 @@
                                 </p>
                                     <div class="formbold-main-wrapper animate-box" data-animate-effect="fadeInLeft">
                                         <div class="formbold-form-wrapper">
-                                            <form action="https://api.web3forms.com/submit" method="POST">
+                                            <form  onsubmit="disableButton()" action="https://api.web3forms.com/submit" method="POST">
                                                 <input type="hidden" name="access_key" value="99a844ca-e74d-4bf3-82f9-485aefb5bed3">
-                                                <input type="hidden" name="subject" value="Glennlopez.com - New Form Message">
+                                                <input type="hidden" name="subject" value="New Form Message">
+                                                <input type="hidden" name="from_name" value="Glennlopez.com">
                                                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                                                 <div class="flex flex-wrap formbold--mx-3">
                                                     <div class="w-full sm:w-half formbold-px-3">
@@ -219,12 +220,21 @@
                                                 <div class="formbold-mb-5">
                                                         <textarea name="message" id="message" placeholder="Type your message here" class="formbold-form-input" required></textarea>
                                                 </div>
-                                                <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
                                                 <!-- Submit -->
                                                 <div class="animate-box" data-animate-effect="fadeInBottom">
-                                                    <button class="formbold-btn">Submit Message</button>
+                                                    <button id="form-submit-btn" type="submit" class="formbold-btn">Submit Message</button>
+                                                    <script>
+                                                        function disableButton() {
+                                                            document.getElementById("form-submit-btn").disabled = true;
+                                                        }
+                                                    </script>
+                                                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
                                                 </div>
+
+
+
+
                                             </form>
                                         </div>
                                     </div>
