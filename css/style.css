@@ -1769,7 +1769,7 @@ p.cursor::after {
     direction: rtl;
 }
 #oopss #error-text img {
-    margin: 85px auto 20px;
+    margin: 0px auto 0px;
     height: 342px;
 }
 #oopss #error-text span {
