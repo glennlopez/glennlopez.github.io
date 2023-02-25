@@ -249,13 +249,33 @@
 
                                                 <!-- Submit -->
                                                 <div class="animate-box" data-animate-effect="fadeInBottom">
-                                                    <button id="form-submit-btn" type="submit" class="formbold-btn">Submit Message</button>
+                                                    <button id="form-submit-btn" type="submit" class="formbold-btn" onclick="this.innerHTML='Message Sent';">Submit Message</button>
+                                                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
                                                     <script>
                                                         function disableButton() {
+                                                            // Disable button
                                                             document.getElementById("form-submit-btn").disabled = true;
+
+                                                            // Store timestamp when button was disabled
+                                                            var timestamp = new Date().getTime();
+                                                            localStorage.setItem("buttonDisabledTimestamp", timestamp);
                                                         }
+
+                                                        // Check if button should be disabled on page load
+                                                        function checkButtonState() {
+                                                            var buttonDisabledTimestamp = localStorage.getItem("buttonDisabledTimestamp");
+                                                            if (buttonDisabledTimestamp) {
+                                                                var currentTime = new Date().getTime();
+                                                                var timeDiff = currentTime - buttonDisabledTimestamp;
+                                                                if (timeDiff < 60000) { // 1 minute in milliseconds
+                                                                    document.getElementById("form-submit-btn").disabled = true;
+                                                                    document.getElementById("form-submit-btn").innerHTML='Message received. Thank you!';
+                                                                }
+                                                            }
+                                                        }
+                                                        checkButtonState();
                                                     </script>
-                                                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
                                                 </div>
 
 
