@@ -1770,7 +1770,7 @@ p.cursor::after {
 }
 #oopss #error-text img {
     margin: 0px auto 0px;
-    height: 342px;
+    height: 300px;
 }
 #oopss #error-text span {
     position: relative;
@@ -1790,7 +1790,7 @@ p.cursor::after {
     color: #000;
     font-size: 30px;
     text-decoration: none;
-    margin: 2em auto 0;
+    margin: 1em auto 0;
     padding: .7em 2em;
     border-radius: 500px;
     box-shadow: 0 20px 70px 4px rgba(0, 0, 0, 0.1), inset 7px 33px 0 0px #ffffff;
