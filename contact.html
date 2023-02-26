@@ -249,12 +249,13 @@
 
                                                 <!-- Submit -->
                                                 <div class="animate-box" data-animate-effect="fadeInBottom">
-                                                    <button id="form-submit-btn" type="submit" class="formbold-btn" onclick="this.innerHTML='Message sent. Thank you!';">Submit Message</button>
+                                                    <button id="form-submit-btn" type="submit" class="formbold-btn">Submit Message</button>
                                                     <input type="hidden" name="redirect" value="https://glennlopez.com/success">
                                                     <script>
                                                         function disableButton() {
                                                             // Disable button
                                                             document.getElementById("form-submit-btn").disabled = true;
+                                                            document.getElementById("form-submit-btn").innerHTML = 'Message sent. Thank you!';
 
                                                             // Store timestamp when button was disabled
                                                             var timestamp = new Date().getTime();
