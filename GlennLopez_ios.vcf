@@ -7,8 +7,6 @@ item1.EMAIL;type=INTERNET;type=pref:me@glennlopez.com
 item1.X-ABLabel:Email
 item2.TEL;type=pref:(320) 204-5366
 item2.X-ABLabel:USA
-item3.TEL;type=pref:(204) 291-0911
-item3.X-ABLabel:Canada
 item4.URL;type=pref:https://github.com/glennlopez
 item4.X-ABLabel:Github
 item5.URL:https://glennlopez.com
