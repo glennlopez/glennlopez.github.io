@@ -1,7 +1,7 @@
 BEGIN:VCARD
 VERSION:3.0
 PRODID:-//Apple Inc.//iPhone OS 16.3.1//EN
-N:Lopez;Test;;;
+N:Lopez;Glenn;;;
 FN:Test Lopez
 item1.EMAIL;type=INTERNET;type=pref:me@glennlopez.com
 item1.X-ABLabel:Email

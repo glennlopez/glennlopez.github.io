@@ -2,8 +2,11 @@ BEGIN:VCARD
 VERSION:2.1
 N:Lopez;Glenn;;;
 FN:Glenn Lopez
-TEL;USA:320-204-5366
+TEL;Cell:320-204-5366
 EMAIL;Business:me@glennlopez.com
+ADR;WORK;PREF:;;1235 Notre-Dame St W\nUnit #330;Montreal;Quebec;H3C 0B1;Canada
+LABEL;WORK;PREF;ENCODING#QUOTED-PRINTABLE;CHARSET#UTF-8:1235 Notre-Dame St W\nUnit #330#0D#
+ #Montreal\, Quebec H3C 0B1#0D#0ACanada
 URL:https://github.com/glennlopez
 URL:https://glennlopez.com
 URL:https://www.linkedin.com/in/realglennlopez/
