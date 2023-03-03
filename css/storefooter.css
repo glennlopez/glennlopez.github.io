@@ -2,13 +2,16 @@
     Store Footer
 =======================*/
 
+.menu-item {
+    font-size: 80%;
+}
 
 .pg-footer {
     font-family: 'Roboto', sans-serif;
 }
 
 .footer {
-    background-color: #727272;
+    background-color: #2a2a28;
     color: #fff;
 }
 .footer-wave-svg {
@@ -49,12 +52,12 @@
     display: inline-block;
 }
 .footer-menu {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .footer-menu-name {
     color: #fffff2;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 900;
     letter-spacing: .1em;
     line-height: 18px;
@@ -138,7 +141,7 @@
 }
 
 .footer-social-amoeba-svg {
-    height: 54px;
+    height: 56px;
     left: 0;
     display: block;
     position: absolute;
@@ -242,7 +245,7 @@
         margin-left: auto;
         margin-right: auto;
         max-width: 1230px;
-        padding: 40px 15px 1050px;
+        padding: 1px 15px 550px;
         position: relative;
     }
 }
@@ -251,7 +254,7 @@
         margin-left: auto;
         margin-right: auto;
         max-width: 1230px;
-        padding: 40px 15px 1050px;
+        padding: 1px 15px 550px;
         position: relative;
     }
 }
@@ -260,7 +263,7 @@
         margin-left: auto;
         margin-right: auto;
         max-width: 1230px;
-        padding: 40px 15px 1050px;
+        padding: 1px 15px 550px;
         position: relative;
     }
 }
@@ -281,8 +284,8 @@
     .footer-content {
         margin-left: auto;
         margin-right: auto;
-        max-width: 1230px;
-        padding: 40px 15px 450px;
+        width: 100%;
+        padding: 1px 15px 250px;
         position: relative;
     }
 
