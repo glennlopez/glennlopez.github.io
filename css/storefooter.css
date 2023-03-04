@@ -29,7 +29,7 @@
 .footer-content {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1230px;
+    /* max-width: 1230px; */
     padding: 40px 15px 450px;
     position: relative;
 }
@@ -57,7 +57,7 @@
 
 .footer-menu-name {
     color: #fffff2;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 900;
     letter-spacing: .1em;
     line-height: 18px;
@@ -71,65 +71,16 @@
     margin-top: 10px;
     padding-left: 0;
 }
-.footer-menu-list li {
-    margin-top: 5px;
-}
 
-.footer-call-to-action-description {
-    color: #fffff2;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.footer-call-to-action-button:hover {
-    background-color: #fffff2;
-    color: #00bef0;
-}
-.button:last-of-type {
-    margin-right: 0;
-}
-.footer-call-to-action-button {
-    background-color: #027b9a;
-    border-radius: 21px;
-    color: #fffff2;
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: .1em;
-    line-height: 18px;
-    padding: 12px 30px;
-    margin: 0 10px 10px 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: background-color .2s;
-    cursor: pointer;
-    position: relative;
-}
-.footer-call-to-action {
-    margin-top: 30px;
-}
-.footer-call-to-action-title {
-    color: #fffff2;
-    font-size: 14px;
-    font-weight: 900;
-    letter-spacing: .1em;
-    line-height: 18px;
-    margin-bottom: 0;
-    margin-top: 0;
-    text-transform: uppercase;
-}
-.footer-call-to-action-link-wrapper {
-    margin-bottom: 0;
-    margin-top: 10px;
-    color: #fff;
-    text-decoration: none;
-}
-.footer-call-to-action-link-wrapper a {
-    color: #fff;
+.footer-menu-list a{
+    color: #9d9d9d;
     text-decoration: none;
 }
 
-
-
+.footer-menu-list a:hover {
+    font-weight: bolder;
+    color: #dfdfdf;
+}
 
 
 .footer-social-links {
@@ -236,9 +187,6 @@
 
 
 
-
-
-
 /* Media Query For different screens */
 @media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
     .footer-content {
@@ -285,7 +233,7 @@
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        padding: 1px 15px 250px;
+        padding: 20px 15px 250px;
         position: relative;
     }
 
@@ -301,4 +249,23 @@
     /* .footer-content-column {
         width: 49.99%;
     } */
+}
+
+.glenn-heading {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.single-cta i {
+    color: #ff5e14;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+}
+
+.cta-text {
+    padding-left: 15px;
+    display: inline-block;
 }
