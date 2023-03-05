@@ -1155,9 +1155,9 @@ body.offcanvas .glenn-nav-toggle {
 }
 
 .btn-primary.btn-outline {
-    background: transparent;
-    color: rgb(231, 86, 125);
-    border: 2px solid rgb(133, 236, 235);
+    background: #ab2d2d;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(171, 45, 45);
 }
 
 .btn-primary.btn-outline:hover,
