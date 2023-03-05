@@ -1145,6 +1145,7 @@ body.offcanvas .glenn-nav-toggle {
     background: rgb(133, 236, 235);
     color: #fff;
     border: 2px solid rgb(133, 236, 235);
+    font-weight: 550;
 }
 
 .btn-primary:hover,
