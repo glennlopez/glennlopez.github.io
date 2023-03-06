@@ -24,7 +24,7 @@
     width: 100%;
 }
 .footer-wave-path {
-    fill: #fffff2;
+    fill: #ffffff;
 }
 
 .footer-content {
@@ -286,5 +286,15 @@
     }
 }
 
+.stay-down-container {
+    position: relative;
+}
 
+.stay-down {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
 

@@ -18,6 +18,9 @@
 *	Edit this section
 *
 * ======================================================= */
+html, body {
+    height: 100%;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -25,7 +28,6 @@ body {
     font-size: 20px;
     line-height: 1.6;
     color: #7e7e7e;
-    height: 100%;
 }
 
 @media screen and (max-width: 992px) {
