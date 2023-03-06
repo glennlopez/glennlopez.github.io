@@ -13,6 +13,7 @@
 .footer {
     background-color: #2a2a28;
     color: #fff;
+
 }
 .footer-wave-svg {
     background-color: transparent;
@@ -159,8 +160,11 @@
 .footer-copyright {
     background-color: #3a3a3a;
     color: #fff;
-    padding: 15px 30px;
-    text-align: center;
+    width: 100%;
+    padding-left: 30px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+
 }
 
 .footer-copyright-wrapper {
@@ -261,4 +265,26 @@
     font-weight: bold;
     color: #dadada;
 }
+
+
+@media screen and (max-width: 1200px) {
+    .footer-content {
+        padding: 5px 15px 240px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .footer-content {
+        padding: 5px 15px 310px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-content {
+        padding: 5px 15px 200px;
+    }
+}
+
+
 
