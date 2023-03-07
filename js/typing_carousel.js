@@ -9,8 +9,8 @@ var textArray = [
     "I code.",
     "I design.",
     "I build.",
-    "I create",
-    "I invent",
+    "I create.",
+    "I invent.",
     "I open source.",
     "I fabricate."
 ];
