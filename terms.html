@@ -61,17 +61,51 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/storefooter.css">
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/3a94259f8f.js" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3a94259f8f.js" crossorigin="anonymous"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+
+
+
+    <style>
+        /* Style the button */
+        .fab {
+            display: inline-block;
+            background-color: #464646;
+            color: white;
+            padding: 22px 20px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            cursor: pointer;
+        }
+
+        /* Style the button on hover */
+        .fab:hover {
+            background-color: #797979;
+        }
+    </style>
+
+
+    <style>
+        /* Style the shopping cart icon */
+        .shopping-cart {
+            font-size: 24px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    </style>
+
+
 
 </head>
 
@@ -117,9 +151,15 @@
                 <div class="row">
 
                     <!-- Title -->
-                    <h2 style="margin-left: 10px;" class="glenn-heading animate-box" data-animate-effect="fadeInLeft">Store
+                    <h2 style="margin-left: 10px;" class="glenn-heading animate-box" data-animate-effect="fadeInLeft">
+                        Store
                         <span style="display:inline; font-weight: lighter"> | </span>
-                        <span style="font-size:50%; display: inline; font-weight: lighter;"> Terms and Conditions </span>
+
+                        <span class="ec-cart-widget"></span>
+                        <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?84151292&data_platform=code&data_date=2023-03-03" charset="utf-8"></script>
+                        <script type="text/javascript">Ecwid.init();</script>
+
+                        <span style="font-size:50%; display: inline; font-weight: lighter; "> Terms and Conditions </span>
                     </h2>
                     <!-- Subtitle -->
                     <div style="font-size: 80%; margin-left: 10px; margin-top: -20px;" class="row animate-box glenn-subtitle" data-animate-effect="fadeInLeft">
@@ -131,6 +171,15 @@
 
                     <!-- Terms -->
                     <div>
+
+
+                        <!-- Back to store FAB -->
+                        <a href="store.html" class="fab">
+                            <i class="fas fas fa-store store shopping-cart"></i>
+                        </a>
+                        <!-- end FAB -->
+
+
 
                         <h1>TERMS OF USE</h1>
                         <h5>Last updated March 5, 2023</h5>
