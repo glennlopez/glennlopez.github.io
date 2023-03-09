@@ -2696,4 +2696,79 @@ p.cursor::after {
     }
 }
 
+/*======================
+    Logo Animation
+=======================*/
+
+.logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.logo .icon {
+    width: 73%;
+    /* max-width: 300px; */
+}
+.logo .icon path {
+    color: #2a2a28;
+    stroke-width: 3px;
+    stroke-dashoffset: -3000;
+    stroke-dasharray: 3000;
+}
+.logo .icon path.is-active {
+    animation-name: icon;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.logo .text {
+    width: 100%;
+    max-width: 900px;
+}
+.logo .text text {
+    color: #2a2a28;
+    stroke-width: 3px;
+    stroke-dashoffset: -800;
+    stroke-dasharray: 800;
+}
+.logo .text text.is-active {
+    animation-name: text;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes icon {
+    50% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    75% {
+        fill: transparent;
+        stroke-width: 3px;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #2d2a2e;
+        stroke-width: 0px;
+    }
+}
+@keyframes text {
+    50% {
+        fill: transparent;
+    }
+    75% {
+        fill: transparent;
+        stroke-dashoffset: 0;
+        stroke-width: 3px;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #2d2a2e;
+        stroke-width: 0px;
+    }
+}
 
