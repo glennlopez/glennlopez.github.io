@@ -3,6 +3,12 @@
     Hero Page Styling
 =======================*/
 
+@media screen and (max-width: 768px) {
+    #output {
+        display: none !important;
+    }
+}
+
 .linear-gradient-body-main {
     background: linear-gradient(287.83deg, #e1d7ca, rgba(255, 255, 255, 0));
 }
