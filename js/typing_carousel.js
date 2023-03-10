@@ -12,7 +12,6 @@ var textArray = [
     "build",
     "invent",
     "innovate",
-    "opensource",
     "fabricate",
     "research"
 ];
