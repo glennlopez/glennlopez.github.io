@@ -13,7 +13,6 @@ var textArray = [
     "invent",
     "innovate",
     "fabricate",
-    "research"
 ];
 
 // Speed (in milliseconds) of typing.
