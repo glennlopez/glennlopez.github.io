@@ -6,13 +6,10 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
-    "I code.",
-    "I design.",
-    "I build.",
-    "I create.",
-    "I invent.",
-    "I open source.",
-    "I fabricate."
+    "I code and create.",
+    "I design and fabricate.",
+    "I invent and innovate.",
+    "I open source and collaborate.",
 ];
 
 // Speed (in milliseconds) of typing.
