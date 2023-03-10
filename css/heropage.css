@@ -36,7 +36,12 @@
     font-weight: 900;
     color: #3f3d3f;
     line-height: 1.1;
-    margin-top: -27px;
+}
+
+.hero-top-header {
+    font-size: 130%;
+    font-weight: 600;
+    color: #888888;
 }
 
 .hero-second-header {
