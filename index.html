@@ -96,17 +96,23 @@
             <nav id="glenn-main-menu" role="navigation">
                 <ul>
                     <li><a href="store.html">Store</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Journal</a></li>
                     <li><a href="https://github.com/glennlopez">Code</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="icebreaker.html">Icebreakers</a></li>
+                    <!-- <li><a href="icebreaker.html">Icebreakers</a></li> -->
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
 
             <!--sse-->
             <div class="glenn-footer hide-on-small-landscape">
-                <p><small>&copy; 2022 Glenn Lopez.<br>All Rights Reserved.</small></p>
+                <p><small>&copy; <span id="currentYear" style="display: inline"></span> Glenn Lopez.<br>All Rights Reserved.</small></p>
+                <script>
+                    var d = new Date();
+                    var year = d.getFullYear();
+                    document.getElementById("currentYear").innerHTML = year;
+                </script>
                 <ul>
                     <li><a href="https://github.com/glennlopez"><i class="icon-github-alt"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/realglennlopez/"><i class="icon-linkedin"></i></a></li>
@@ -146,7 +152,7 @@
                 <div style="margin-left: 70px; margin-top: -30px">
 
                     <div class="hero-top-header">
-                        Multipotentialite Master of Integration
+                        <span class="hide-on-small-screen">Multipotentialite</span> Master of Integration.
                     </div>
 
                     <!-- Main hero header -->
@@ -158,9 +164,8 @@
 
                     <!-- Secondary hero header -->
                     <div class="hero-second-header">
-                        Uniting software, electronics, and mechanics,
-                        <!-- Navigating multiple dimensions of technology,<br> -->
-                        building ideas to life.
+                        Uniting software, electronics, and mechanics with design;
+                        building beautiful ideas to life.
                     </div>
                     <!-- end Secondary hero header -->
                 </div>
