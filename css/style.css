@@ -637,7 +637,8 @@ body.offcanvas .glenn-nav-toggle {
 
 .glenn-cards {
     padding: 1em 0;
-    background: #e6e6e6;
+    /* background: #e6e6e6; */
+    background: linear-gradient(287.83deg, #c1c1c1, rgb(241, 241, 241));
 }
 
 @media screen and (max-width: 768px) {
