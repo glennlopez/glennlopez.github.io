@@ -106,7 +106,7 @@
                 <ul>
                     <li><a href="store.html">Store</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Journal</a></li>
+                    <li class="glenn-active"><a href="projects.html">Journal</a></li>
                     <li><a href="https://github.com/glennlopez">Code</a></li>
                     <li><a href="about.html">About</a></li>
                     <!-- <li><a href="icebreaker.html">Icebreakers</a></li> -->
@@ -116,7 +116,12 @@
 
             <!--sse-->
            <div class="glenn-footer hide-on-small-landscape">
-               <p><small>&copy; 2022 Glenn Lopez.<br>All Rights Reserved.</small></p>
+               <p><small>&copy; <span id="currentYear" style="display: inline"></span> Glenn Lopez.<br>All Rights Reserved.</small></p>
+               <script>
+                   var d = new Date();
+                   var year = d.getFullYear();
+                   document.getElementById("currentYear").innerHTML = year;
+               </script>
                 <ul>
                     <li><a href="https://github.com/glennlopez"><i class="icon-github-alt"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/realglennlopez/"><i class="icon-linkedin"></i></a></li>

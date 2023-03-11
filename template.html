@@ -92,7 +92,12 @@
         <!-- FOOTER -->
         <!--sse-->
         <div class="glenn-footer hide-on-small-landscape">
-            <p><small>&copy; 2022 Glenn Lopez.<br>All Rights Reserved.</small></p>
+            <p><small>&copy; <span id="currentYear" style="display: inline"></span> Glenn Lopez.<br>All Rights Reserved.</small></p>
+            <script>
+                var d = new Date();
+                var year = d.getFullYear();
+                document.getElementById("currentYear").innerHTML = year;
+            </script>
             <ul>
                 <li><a href="https://github.com/glennlopez"><i class="icon-github-alt"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/realglennlopez/"><i class="icon-linkedin"></i></a></li>
