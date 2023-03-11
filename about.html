@@ -199,7 +199,21 @@
 
                     <div style="display: flex; justify-content: center; align-items: center; width: 100%">
                         <div class="career-stats-element no-border-left">
-                            <span class="career-stats-number">12</span>
+                            <span class="career-stats-number" id="career-stats"></span>
+
+                            <!-- Dynamically change the years of experience -->
+                            <script>
+                                // Get the current year
+                                const currentYear = new Date().getFullYear();
+
+                                // Calculate the number of years since 2011
+                                const yearsSince2011 = currentYear - 2011;
+
+                                // Set the career stats number to the calculated value
+                                const careerStatsNumber = document.getElementById("career-stats");
+                                careerStatsNumber.textContent = Math.min(yearsSince2011 + 1, 12);
+                            </script>
+
                             <span class="career-stats-desc">years <br>work exp</span>
                         </div>
                         <div class="career-stats-element">
