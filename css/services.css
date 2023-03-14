@@ -1,8 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+.linear-gradient-body-main {
+    background: linear-gradient(287.83deg, #d9e1ca, rgba(255, 255, 255, 0));
+}
+
+.service-price-header {
+    margin-bottom: -5px;
+    font-size: 70%;
+    text-transform: uppercase;
+    color: #48971b !important;
+}
+
 .service-body {
-    background-color: #f8f8f8;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+    background: linear-gradient(287.83deg, #d9e1ca, rgba(255, 255, 255, 0));
 }
 
 .service-font-color {
@@ -30,7 +42,7 @@
     left: 0;
     width: 0%;
     height: 5px;
-    background-color: #ce2b57;
+    background-color: #2a2a28;
     transition: 0.5s;
 }
 .card:hover {
