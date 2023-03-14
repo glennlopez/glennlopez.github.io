@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 
-.linear-gradient-body-main {
-    background: linear-gradient(287.83deg, #d9e1ca, rgba(255, 255, 255, 0));
-}
 
 .service-price-header {
     margin-bottom: -5px;
@@ -14,7 +11,7 @@
 .service-body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    background: linear-gradient(287.83deg, #d9e1ca, rgba(255, 255, 255, 0));
+    background: linear-gradient(287.83deg, #dfe3d6, rgba(255, 255, 255, 0));
 }
 
 .service-font-color {
@@ -27,7 +24,7 @@
 
 .card {
     border: 0;
-    border-radius: 0px;
+    border-radius: 20px;
     -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
     box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease-in-out;
@@ -42,7 +39,7 @@
     left: 0;
     width: 0%;
     height: 5px;
-    background-color: #2a2a28;
+    /* background-color: #2a2a28; */
     transition: 0.5s;
 }
 .card:hover {
@@ -87,23 +84,4 @@
     font-size: 1rem;
     color: #b3b3b3;
     letter-spacing: 0px;
-}
-
-.btn {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: #a6a6a6;
-    border-radius: 0;
-    padding: 0.75rem 1.25rem;
-    letter-spacing: 1px;
-}
-
-.btn-gradient {
-    background-color: #f2f2f2;
-    transition: background 0.3s ease-in-out;
-}
-.btn-gradient:hover {
-    color: white;
-    background-color: #2f2f2f;
 }
