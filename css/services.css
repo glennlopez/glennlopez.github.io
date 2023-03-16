@@ -46,6 +46,8 @@
     transform: scale(1.05);
     -webkit-box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
     box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .card:hover:after {
     width: 100%;
