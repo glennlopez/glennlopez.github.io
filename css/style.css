@@ -2701,12 +2701,20 @@ p.cursor::after {
 /*======================
     Certificate
 =======================*/
+.cert_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .cert_img {
     margin: 2px;
-    width: 15%;
+    width: 30%;
     height: auto;
-    opacity: 80%;
+    opacity: 85%;
+    filter: grayscale(0%);
+}
 
-
+.cert_img:hover {
+    filter: grayscale(0%);
 }

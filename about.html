@@ -75,6 +75,53 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+        .owl-carousel {
+            margin: 0 auto;
+            max-width: 1200px;
+            overflow: hidden;
+        }
+
+        .owl-carousel img {
+            width: auto;
+            max-height: 200px;
+            margin: 0 5px;
+            object-fit: cover;
+        }
+
+        .owl-carousel .owl-stage {
+            display: flex;
+            align-items: center;
+        }
+
+        .owl-carousel .owl-stage-outer {
+            overflow: hidden;
+        }
+
+        .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel .owl-nav button.owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0;
+            border: none;
+            background: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .owl-carousel .owl-nav button.owl-prev {
+            left: 0;
+        }
+
+        .owl-carousel .owl-nav button.owl-next {
+            right: 0;
+        }
+
+    </style>
+
+
+
 
 </head>
 
@@ -189,15 +236,23 @@
 
                                 <div class="gtitle-container">
                                     <span class="gtitle">
-                                         Professional Certifications
+                                        Certificates
                                     </span>
                                 </div>
 
-                                <hr style="background-color: #a2a2a2; height: 1px; width: 95%">
 
-                                <div>
-                                    <img src="certificates/photo/Harvard_cs50.png" class="cert_img">
+                                <hr style="background-color: #a2a2a2; height: 1px; width: 95%">
+                                <div class="owl-carousel animate-box cert_container">
+                                    <!-- Professional Certs -->
                                     <img src="certificates/photo/TransportCanada_rpas.png" class="cert_img">
+                                    <img src="certificates/photo/Google_pm.png" class="cert_img">
+
+                                    <!-- Other Certs -->
+                                    <img src="certificates/photo/Harvard_cs50.png" class="cert_img">
+                                    <img src="certificates/photo/UTA_embedded.png" class="cert_img">
+                                    <img src="certificates/photo/FreeCodeCamp_js.png" class="cert_img">
+                                    <img src="certificates/photo/FreeCodeCamp_web.png" class="cert_img">
+
                                 </div>
 
 
@@ -246,7 +301,7 @@
                         </div>
                         <div class="career-stats-element">
                             <span class="career-stats-number">8+</span>
-                            <span class="career-stats-desc">other<br>certificates</span>
+                            <span class="career-stats-desc">skill<br>certificates</span>
                         </div>
                     </div>
 
@@ -423,17 +478,8 @@
                 </div>
                 <!-- END TIMELINE CONTAINER -->
 
-                <!-- TIMELINE SELECTOR
-                <div class="glenn-social-box animate-box" data-animate-effect="fadeInBottom">
-                    <span id="education-timeline" class="timeline-selector"><img class="spin" alt="cap" src="images/icons/education.png">Education</span>
-                    <span id="work-timeline" class="timeline-selector timeline-active"><img class="spin" alt="cap" src="images/icons/work.png">Work</span>
-                    <span style="display: block; font-size: small">(select a timeline to display)</span>
-                </div>
-                 END TIMELINE SELECTOR -->
 
                 <!-- MINI CARD -->
-
-
                 <div class="glenn-flex-wrap">
                     <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInBottom">
                         <div class="glenn-card animate-box" data-animate-effect="fadeInBottom">
@@ -451,8 +497,6 @@
                     </div>
                 </div>
                 <!-- END MINI CARD -->
-
-
 
 
                 <!-- Website Credits -->
@@ -478,70 +522,6 @@
                     <a href="https://youtube.com/glennlopez" target="_blank"><img alt="youtube" class="glenn-social-icon" src="images/icons/youtube.png"></a>
                 </div>
                 <!-- END SOCIAL CARDS -->
-
-                <!-- RANDOM QUOTE FOOTER
-                <div class="blockquote glenn-card animate-box" data-animate-effect="fadeInRight">
-                    <svg viewBox="0 0 512 512" width="40" class="quote-icon" style="fill: #a7a7a7">
-                        <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z" />
-                    </svg>
-
-                    <div class="quote-item">
-                        <p class="quote">For the best return on your money, pour your purse into your head.</p>
-                        <p class="author">— Benjamin Franklin</p>
-                    </div>
-
-                    <div class="quote-item">
-                        <p class="quote">Programming is like sex, one mistake and you have to support it for the rest of your life.</p>
-                        <p class="author">— Michael Sinz</p>
-                    </div>
-
-                    <div class="quote-item">
-                        <p class="quote">The one who falls and gets up is stronger than the one who never tried. Do not fear failure but rather fear not trying.</p>
-                        <p class="author">— Roy T. Bennett</p>
-                    </div>
-
-                    <div class="quote-item">
-                        <p class="quote">Code is like humor. Its bad when you have to explain it.</p>
-                        <p class="author">— Unknown</p>
-                    </div>
-
-                    <div class="quote-item">
-                        <p class="quote">I see life almost like one long University education that I never had -- everyday I’m learning something new.</p>
-                        <p class="author">— Richard Branson</p>
-                    </div>
-
-                    <div class="quote-item">
-                        <p class="quote">One of the huge mistakes people make is that they try to force an interest on themselves. You don't choose your passions; your passions choose you.</p>
-                        <p class="author">— Jeff Bezos</p>
-                    </div>
-
-                    <div class="quote-item">
-                        <p class="quote">Success is walking from failure to failure with no loss of enthusiasm.</p>
-                        <p class="author">— Winston Churchill</p>
-                    </div>
-
-                    <div class="quote-item">
-                        <p class="quote">There are two ways to write error-free programs; only the third one works.</p>
-                        <p class="author">—Alan J. Perlis</p>
-                    </div>
-
-                    <div class="quote-item">
-                        <p class="quote">Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young.</p>
-                        <p class="author">— Henry Ford</p>
-                    </div>
-
-                    <div class="quote-item">
-                        <p class="quote">Java is to JavaScript as ham is to hamster.</p>
-                        <p class="author">— Jeremy Keith</p>
-                    </div>
-
-                    <div class="quote-item">
-                        <p class="quote">The important thing is not to stop questioning. Curiosity has its own reason for existence.</p>
-                        <p class="author">— Albert Einstein</p>
-                    </div>
-
-                </div>
-                 END RANDOM QUOTE FOOTER  -->
 
             </div>
         </div>
@@ -816,6 +796,33 @@
     observer1.observe(elementToObserve1);
 </script>
 <!-- END Class Toggle for Nav selection element -->
+
+<!-- Certificate Carousel -->
+<script>
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+            items: 5,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2700,
+            autoplayHoverPause: true,
+            dots: false, // set dots to false to remove dots
+            responsive: {
+                0: {
+                    items: 4
+                },
+                768: {
+                    items: 4
+                },
+                992: {
+                    items: 5
+                }
+            }
+        });
+    });
+</script>
+<!-- endCertificate Carousel -->
 
 
 </body>
