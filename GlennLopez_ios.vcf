@@ -5,17 +5,19 @@ N:Lopez;Glenn;;;
 FN:Test Lopez
 item1.EMAIL;type=INTERNET;type=pref:me@glennlopez.com
 item1.X-ABLabel:Email
-item2.TEL;type=pref:(320) 204-5366
-item2.X-ABLabel:SMS 
-item3.ADR;type=pref:;;1235 Notre-Dame St W\nUnit #330;Montreal;Quebec;H3C 0B1;Canada
-item3.X-ABLabel:Mailing Address
-item3.X-ABADR:ca
-item4.URL;type=pref:https://github.com/glennlopez
-item4.X-ABLabel:Github
-item5.URL:https://glennlopez.com
-item5.X-ABLabel:Website
-item6.URL:https://www.linkedin.com/in/realglennlopez/
-item6.X-ABLabel:LinkedIn
+item2.TEL;type=pref:1-833-GHLOPEZ
+item2.X-ABLabel:Toll-Free
+item3.TEL;type=pref:1-833-445-6739
+item3.X-ABLabel:Fax
+item4.ADR;type=pref:;;1235 Notre-Dame St W\nUnit #330;Montreal;Quebec;H3C 0B1;Canada
+item4.X-ABLabel:Mailing Address
+item4.X-ABADR:ca
+item5.URL;type=pref:https://github.com/glennlopez
+item5.X-ABLabel:Github
+item6.URL:https://glennlopez.com
+item6.X-ABLabel:Website
+item7.URL:https://www.linkedin.com/in/realglennlopez/
+item7.X-ABLabel:LinkedIn
 PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAA
  AAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABLKADAAQAAAABAA
  ABLAAAAAD/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcI
