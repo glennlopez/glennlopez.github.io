@@ -20,22 +20,23 @@ fetch('../inf.dat')
         const phoneRegex = /Phone_number:\s*([A-Za-z\d-]+)/;
         const parsedPhoneNumber = data.match(phoneRegex)[1];
 
-        // Find the element in the existing HTML file where you want to insert the phone number
-        const phoneNumberElement = document.getElementById('phone-number');
-        if (phoneNumberElement) {
-            // Insert the extracted phone number into the <span> tag
-            phoneNumberElement.textContent = parsedPhoneNumber;
-        }
+        // Replace this part of your inf.js file
+        const phoneNumberElements = document.getElementsByClassName('phone-number');
+        const phoneNumberLinkElements = document.getElementsByClassName('phone-number-link');
 
-        // Find the element in the existing HTML file where you want to insert the phone number link
-        const phoneNumberLinkElement = document.getElementById('phone-number-link');
-        if (phoneNumberLinkElement) {
+        if (phoneNumberElements.length > 0 && phoneNumberLinkElements.length > 0) {
             // Convert the vanity phone number to its numerical counterpart
             const numericPhoneNumber = vanityToNumeric(parsedPhoneNumber);
 
-            // Set the href attribute to the tel: link
-            phoneNumberLinkElement.setAttribute('href', `tel:${numericPhoneNumber}`);
+            // Iterate through each phone number element and set the content and href attributes
+            for (let i = 0; i < phoneNumberElements.length; i++) {
+                phoneNumberElements[i].textContent = parsedPhoneNumber;
+                phoneNumberLinkElements[i].setAttribute('href', `tel:${numericPhoneNumber}`);
+            }
         }
+
+
+
 
         // Use regular expressions to parse and extract the mailing address
         const addressRegex = /Mailing_Address:\s*([\s\S]*?)(?=Email_address)/;
