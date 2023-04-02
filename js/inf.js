@@ -110,6 +110,35 @@ fetch('../inf.dat')
             // Set the href attribute to the fax: link
             faxNumberLinkElement.setAttribute('href', `sms:${parsedFaxNumber}`);
         }
+
+        // social media links
+        const socialRegexes = {
+            github: /GitHub_address:\s*(https?:\/\/[\w.-]+(?:\.\w+)+\/[\w-]+(?:\/[\w-]+)*)/,
+            linkedin: /LinkedIn_address:\s*(https?:\/\/www\.linkedin\.com\/in\/[\w-]+)/,
+            youtube: /YouTube_address:\s*(https?:\/\/www\.youtube\.com\/[\w-]+)/,
+        };
+
+        // Iterate over the socialRegexes object
+        for (const key in socialRegexes) {
+            const regex = socialRegexes[key];
+            const parsedAddress = data.match(regex)[1];
+
+            // Find the element in the existing HTML file where you want to insert the address
+            const addressElement = document.getElementById(`${key}-address`);
+            if (addressElement) {
+                // Insert the extracted address into the <span> tag
+                addressElement.textContent = parsedAddress;
+            }
+
+            // Find the element in the existing HTML file where you want to insert the address link
+            const addressLinkElement = document.getElementById(`${key}-address-link`);
+            if (addressLinkElement) {
+                // Set the href attribute to the extracted address
+                addressLinkElement.setAttribute('href', parsedAddress);
+            }
+        }
+
+
     })
     .catch(error => {
         console.error('Error fetching info.txt:', error);
