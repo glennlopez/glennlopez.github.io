@@ -1,3 +1,6 @@
+/**************************
+ *  INFO
+ *************************/
 function vanityToNumeric(phoneNumber) {
     const vanityMap = {
         'A': '2', 'B': '2', 'C': '2',
@@ -144,11 +147,44 @@ fetch('../.inf/inf.dat')
             }
         }
 
-
-
-
-
     })
     .catch(error => {
         console.error('Error fetching info.txt:', error);
     });
+
+
+
+/**************************
+ *  NAVIGATION LINKS
+ *************************/
+document.addEventListener("DOMContentLoaded", async function () {
+    const response = await fetch("../.inf/nav.dat");
+    const navData = await response.text();
+    const navDataLines = navData.split("\n");
+
+    const navDataObj = {};
+    navDataLines.forEach(line => {
+        const [key, value] = line.split(": ");
+        if (key && value) {
+            navDataObj[key] = value;
+        }
+    });
+
+    const sections = [
+        { labelKey: "Store_label", linkKey: "Store_link", id: "store-link" },
+        { labelKey: "Services_label", linkKey: "Services_link", id: "services-link" },
+        { labelKey: "Projects_label", linkKey: "Projects_link", id: "projects-link" },
+        { labelKey: "Code_label", linkKey: "Code_link", id: "code-link" },
+        { labelKey: "About_label", linkKey: "About_link", id: "about-link" },
+        { labelKey: "Contact_label", linkKey: "Contact_link", id: "contact-link" },
+    ];
+
+    sections.forEach(section => {
+        const label = navDataObj[section.labelKey];
+        const link = navDataObj[section.linkKey];
+
+        const linkElement = document.getElementById(section.id);
+        linkElement.textContent = label;
+        linkElement.href = link;
+    });
+});

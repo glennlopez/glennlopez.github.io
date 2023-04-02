@@ -1,0 +1,13 @@
+Store_label: Store
+Services_label: Services
+Projects_label: Technical Blog
+Code_label: Code
+About_label: About
+Contact_label: Contact
+
+Store_link: store.html
+Services_link: services.html
+Projects_link: projects.html
+Code_link: https://github.com/glennlopez
+About_link: about.html
+Contact_link: contact.html
