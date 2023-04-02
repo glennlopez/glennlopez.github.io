@@ -36,35 +36,34 @@ fetch('../inf.dat')
         }
 
 
-
-
         // Use regular expressions to parse and extract the mailing address
         const addressRegex = /Mailing_Address:\s*([\s\S]*?)(?=Email_address)/;
         const parsedAddress = data.match(addressRegex)[1].trim();
 
-        // Find the element in the existing HTML file where you want to insert the mailing address in one line
-        const mailingAddressOneLineElement = document.getElementById('mailing-address-one-line');
-        if (mailingAddressOneLineElement) {
-            // Insert the extracted mailing address into the <p> tag as a single line
-            mailingAddressOneLineElement.textContent = parsedAddress.replace(/\s*\n\s*/g, ', ');
+        const mailingAddressOneLineElements = document.getElementsByClassName('mailing-address-one-line');
+        const mailingAddressOriginalElements = document.getElementsByClassName('mailing-address-original');
+        const mailingAddressOneLineLinkElements = document.getElementsByClassName('mailing-address-one-line-link');
+        const encodedMailingAddress = encodeURIComponent(parsedAddress.replace(/\s*\n\s*/g, ', '));
+
+        for (let i = 0; i < mailingAddressOneLineElements.length; i++) {
+            if (mailingAddressOneLineElements[i]) {
+                mailingAddressOneLineElements[i].textContent = parsedAddress.replace(/\s*\n\s*/g, ', ');
+            }
         }
 
-        // Find the element in the existing HTML file where you want to insert the original mailing address
-        const mailingAddressOriginalElement = document.getElementById('mailing-address-original');
-        if (mailingAddressOriginalElement) {
-            // Insert the extracted mailing address into the <p> tag in its original format
-            mailingAddressOriginalElement.innerHTML = parsedAddress.replace(/\n/g, '<br>');
+        for (let i = 0; i < mailingAddressOriginalElements.length; i++) {
+            if (mailingAddressOriginalElements[i]) {
+                mailingAddressOriginalElements[i].innerHTML = parsedAddress.replace(/\n/g, '<br>');
+            }
         }
 
-        // Find the element in the existing HTML file where you want to insert the mailing address link
-        const mailingAddressOneLineLinkElement = document.getElementById('mailing-address-one-line-link');
-        if (mailingAddressOneLineLinkElement) {
-            // Encode the mailing address for use in a URL
-            const encodedMailingAddress = encodeURIComponent(parsedAddress.replace(/\s*\n\s*/g, ', '));
-
-            // Set the href attribute to the Google Maps link
-            mailingAddressOneLineLinkElement.setAttribute('href', `https://www.google.com/maps?q=${encodedMailingAddress}`);
+        for (let i = 0; i < mailingAddressOneLineLinkElements.length; i++) {
+            if (mailingAddressOneLineLinkElements[i]) {
+                mailingAddressOneLineLinkElements[i].setAttribute('href', `https://www.google.com/maps?q=${encodedMailingAddress}`);
+            }
         }
+
+
 
         // Use regular expressions to parse and extract all the email addresses
         const emailRegexes = {
@@ -81,63 +80,72 @@ fetch('../inf.dat')
         for (const key in emailRegexes) {
             const regex = emailRegexes[key];
             const parsedEmail = data.match(regex)[1];
-            const emailElement = document.getElementById(`email-address-${key}`);
-            if (emailElement) {
-                emailElement.textContent = parsedEmail;
-            }
 
-            // Find the element in the existing HTML file where you want to insert the email link
-            const emailLinkElement = document.getElementById(`email-address-${key}-link`);
-            if (emailLinkElement) {
-                // Set the href attribute to the mailto: link
-                emailLinkElement.setAttribute('href', `mailto:${parsedEmail}`);
+            const emailElements = document.getElementsByClassName(`email-address-${key}`);
+            const emailLinkElements = document.getElementsByClassName(`email-address-${key}-link`);
+
+            if (emailElements.length > 0 && emailLinkElements.length > 0) {
+                // Iterate through each email element and set the content and href attributes
+                for (let i = 0; i < emailElements.length; i++) {
+                    emailElements[i].textContent = parsedEmail;
+                    emailLinkElements[i].setAttribute('href', `mailto:${parsedEmail}`);
+                }
             }
         }
+
 
         // Use regular expressions to parse and extract the fax number
         const faxRegex = /Fax_number:\s*([\d-]+)/;
         const parsedFaxNumber = data.match(faxRegex)[1];
 
-        // Find the element in the existing HTML file where you want to insert the fax number
-        const faxNumberElement = document.getElementById('fax-number');
-        if (faxNumberElement) {
-            // Insert the extracted fax number into the <span> tag
-            faxNumberElement.textContent = parsedFaxNumber;
+        const faxNumberElements = document.getElementsByClassName('fax-number');
+        const faxNumberLinkElements = document.getElementsByClassName('fax-number-link');
+
+        if (faxNumberElements.length > 0 && faxNumberLinkElements.length > 0) {
+            // Iterate through each fax number element and set the content and href attributes
+            for (let i = 0; i < faxNumberElements.length; i++) {
+                faxNumberElements[i].textContent = parsedFaxNumber;
+                faxNumberLinkElements[i].setAttribute('href', `sms:${parsedFaxNumber}`);
+            }
         }
 
-        // Find the element in the existing HTML file where you want to insert the fax number link
-        const faxNumberLinkElement = document.getElementById('fax-number-link');
-        if (faxNumberLinkElement) {
-            // Set the href attribute to the fax: link
-            faxNumberLinkElement.setAttribute('href', `sms:${parsedFaxNumber}`);
-        }
 
-        // social media links
         const socialRegexes = {
             github: /GitHub_address:\s*(https?:\/\/[\w.-]+(?:\.\w+)+\/[\w-]+(?:\/[\w-]+)*)/,
             linkedin: /LinkedIn_address:\s*(https?:\/\/www\.linkedin\.com\/in\/[\w-]+)/,
             youtube: /YouTube_address:\s*(https?:\/\/www\.youtube\.com\/[\w-]+)/,
         };
 
-        // Iterate over the socialRegexes object
         for (const key in socialRegexes) {
             const regex = socialRegexes[key];
             const parsedAddress = data.match(regex)[1];
 
-            // Find the element in the existing HTML file where you want to insert the address
-            const addressElement = document.getElementById(`${key}-address`);
-            if (addressElement) {
-                // Insert the extracted address into the <span> tag
-                addressElement.textContent = parsedAddress;
-            }
+            if (key === 'github' || key === 'linkedin' || key === 'youtube') {
+                const addressElements = document.getElementsByClassName(`${key}-address`);
+                const addressLinkElements = document.getElementsByClassName(`${key}-address-link`);
 
-            // Find the element in the existing HTML file where you want to insert the address link
-            const addressLinkElement = document.getElementById(`${key}-address-link`);
-            if (addressLinkElement) {
-                // Set the href attribute to the extracted address
-                addressLinkElement.setAttribute('href', parsedAddress);
+                if (addressElements.length > 0 && addressLinkElements.length > 0) {
+                    // Iterate through each address element and set the content and href attributes
+                    for (let i = 0; i < addressElements.length; i++) {
+                        addressElements[i].textContent = parsedAddress;
+                        addressLinkElements[i].setAttribute('href', parsedAddress);
+                    }
+                }
+            } else {
+                const addressElement = document.getElementById(`${key}-address`);
+                if (addressElement) {
+                    addressElement.textContent = parsedAddress;
+                }
+
+                const addressLinkElement = document.getElementById(`${key}-address-link`);
+                if (addressLinkElement) {
+                    addressLinkElement.setAttribute('href', parsedAddress);
+                }
             }
         }
+
+
+
 
 
     })
