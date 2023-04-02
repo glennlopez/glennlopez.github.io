@@ -13,7 +13,7 @@ function vanityToNumeric(phoneNumber) {
     return phoneNumber.split('').map(char => vanityMap[char.toUpperCase()] || char).join('');
 }
 
-fetch('../inf.dat')
+fetch('../.inf/inf.dat')
     .then(response => response.text())
     .then(data => {
         // Use regular expressions to parse and extract the phone number
