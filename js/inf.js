@@ -16,7 +16,7 @@ function vanityToNumeric(phoneNumber) {
     return phoneNumber.split('').map(char => vanityMap[char.toUpperCase()] || char).join('');
 }
 
-fetch('../.inf/inf.dat')
+fetch('../inf/inf.dat')
     .then(response => response.text())
     .then(data => {
         // Use regular expressions to parse and extract the phone number
@@ -158,7 +158,7 @@ fetch('../.inf/inf.dat')
  *  NAVIGATION LINKS
  *************************/
 document.addEventListener("DOMContentLoaded", async function () {
-    const response = await fetch("../.inf/nav.dat");
+    const response = await fetch("../inf/nav.dat");
     const navData = await response.text();
     const navDataLines = navData.split("\n");
 
