@@ -2697,6 +2697,46 @@ p.cursor::after {
     }
 }
 
+.hover-text {
+    position: relative;
+    display: inline-block;
+}
+
+/*======================
+    Bubble alert over words
+=======================*/
+
+.bubble-alert {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.bubble-alert::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #f9f9f9 transparent transparent transparent;
+}
+
+.hover-text:hover .bubble-alert {
+    display: block;
+}
+
+
 
 /*======================
     Certificate
