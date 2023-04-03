@@ -188,7 +188,7 @@ figure {
     bottom: 7px;
     left: 10px;
     right: 10px;
-    background-color: rgb(231, 86, 125);
+    background-color: rgb(231, 86, 125) !important;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
