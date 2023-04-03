@@ -2710,9 +2710,10 @@ p.cursor::after {
 .cert_img {
     margin: 2px;
     width: 30%;
+    max-width: 120px;
     height: auto;
     opacity: 85%;
-    filter: grayscale(0%);
+    filter: grayscale(100%);
 }
 
 .cert_img:hover {
