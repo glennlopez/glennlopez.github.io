@@ -2832,18 +2832,23 @@ p.cursor::after {
     Mailing Address Side by Side - contact.html
 =======================*/
 .mailing-address-container {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Change from 'space-between' to 'flex-start' */
-    gap: 60px; /* Add gap between the addresses */
+    justify-content: flex-start;
+    gap: 60px; /* Gap between the addresses when side by side */
 }
 
 .mailing-address-item {
+    display: inline-block;
     margin-bottom: 16px;
     max-width: 400px; /* Set a maximum width for each address item */
 }
 
 @media (max-width: 768px) {
+    .mailing-address-container {
+        gap: 16px; /* Reduce gap between the addresses when they are stacked */
+    }
+
     .mailing-address-item {
         flex-basis: 100%;
     }
