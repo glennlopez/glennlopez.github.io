@@ -193,7 +193,7 @@
 
 
                                         <span style="font-size: small; line-height: 1.2; max-width: 400px; display: inline-block">
-                                            By calling or texting <a href="" class="fax-number-link"><span class="fax-number"></span></a>, you agree to receive text messages from this business.
+                                            By calling or texting <a href="" class="fax-number-link"><span class="fax-number"></span></a>, you agree to receive text messages from this number.
                                             If you no longer wish to receive text messages, you may opt out at any time by replying "STOP".
                                         </span>
 
@@ -218,9 +218,6 @@
                                         <span style="font-size: small; line-height: 1.2; max-width: 400px; display: inline-block">
                                             The mailing address above may change as I seek to improve our services for you. Please stay alert for any updates. I appreciate your continued support.
                                         </span>
-
-
-
                                     </p>
                                     <!--/sse-->
                                     <!-- End Contact Info-->
@@ -237,91 +234,114 @@
 
                         </div>
 
+
+
+
                             <!-- Contact Form -->
                             <div id="glenn-contact-form" class="hide-on-tablet-screen glenn-contact-form">
                                 <h2 class="glenn-heading animate-box" data-animate-effect="fadeInLeft">Contact me</h2>
                                 <p style="margin-top: -2em; margin-left: 3px; font-size: 80%" class="glenn-lead animate-box" data-animate-effect="fadeInLeft">
-                                     Submit your questions and feedback using the form below.
+                                    Submit your questions and feedback using the form below.
                                 </p>
-                                    <div class="formbold-main-wrapper animate-box" data-animate-effect="fadeInLeft">
-                                        <div class="formbold-form-wrapper">
-                                            <form  onsubmit="disableButton()" action="https://api.web3forms.com/submit" method="POST">
-                                                <input type="hidden" name="access_key" value="99a844ca-e74d-4bf3-82f9-485aefb5bed3">
-                                                <input type="hidden" name="subject" value="New Form Message">
-                                                <input type="hidden" name="from_name" value="Glennlopez.com">
-                                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                                                <div class="flex flex-wrap formbold--mx-3">
-                                                    <div class="w-full sm:w-half formbold-px-3">
-                                                        <div class="formbold-mb-5 w-full">
-
-                                                            <input
-                                                                    type="text"
-                                                                    name="name"
-                                                                    id="name"
-                                                                    placeholder="Your name"
-                                                                    class="formbold-form-input"
-                                                            />
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w-full sm:w-half formbold-px-3">
-                                                        <div class="formbold-mb-5">
-
-                                                            <input
-                                                                    type="email"
-                                                                    name="email"
-                                                                    id="email"
-                                                                    placeholder="Your email"
-                                                                    class="formbold-form-input"
-                                                                    required
-                                                            />
-                                                        </div>
+                                <div class="formbold-main-wrapper animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="formbold-form-wrapper">
+                                        <form id="contact-form" onsubmit="return validateEmail();" action="https://api.web3forms.com/submit" method="POST">
+                                            <input type="hidden" name="access_key" value="99a844ca-e74d-4bf3-82f9-485aefb5bed3">
+                                            <input type="hidden" name="subject" value="New Form Message">
+                                            <input type="hidden" name="from_name" value="Glennlopez.com">
+                                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                            <div class="flex flex-wrap formbold--mx-3">
+                                                <div class="w-full sm:w-half formbold-px-3">
+                                                    <div class="formbold-mb-5 w-full">                        <input
+                                                            type="text"
+                                                            name="name"
+                                                            id="name"
+                                                            placeholder="Your name"
+                                                            class="formbold-form-input"
+                                                    />
                                                     </div>
                                                 </div>
 
-                                                <div class="formbold-mb-5">
-                                                        <textarea name="message" id="message" placeholder="Type your message here" class="formbold-form-input" required></textarea>
+                                                <div class="w-full sm:w-half formbold-px-3">
+                                                    <div class="formbold-mb-5">
+
+                                                        <input
+                                                                type="email"
+                                                                name="email"
+                                                                id="email"
+                                                                placeholder="Your email"
+                                                                class="formbold-form-input"
+                                                                required
+                                                        />
+                                                    </div>
                                                 </div>
+                                            </div>
 
-                                                <!-- Submit -->
-                                                <div class="animate-box" data-animate-effect="fadeInBottom">
-                                                    <button id="form-submit-btn" type="submit" class="formbold-btn">Submit Message</button>
-                                                    <input type="hidden" name="redirect" value="https://glennlopez.com/success">
-                                                    <script>
-                                                        function disableButton() {
-                                                            // Disable button
-                                                            document.getElementById("form-submit-btn").disabled = true;
-                                                            document.getElementById("form-submit-btn").innerHTML = 'Message sent. Thank you!';
+                                            <div class="formbold-mb-5">
+                                                <textarea name="message" id="message" placeholder="Type your message here" class="formbold-form-input" required></textarea>
+                                            </div>
 
-                                                            // Store timestamp when button was disabled
-                                                            var timestamp = new Date().getTime();
-                                                            localStorage.setItem("buttonDisabledTimestamp", timestamp);
-                                                        }
+                                            <!-- Submit -->
+                                            <div class="animate-box" data-animate-effect="fadeInBottom">
+                                                <button id="form-submit-btn" type="submit" class="formbold-btn">Submit Message</button>
+                                                <input type="hidden" name="redirect" value="https://glennlopez.com/success">
+                                            </div>
 
-                                                        // Check if button should be disabled on page load
-                                                        function checkButtonState() {
-                                                            var buttonDisabledTimestamp = localStorage.getItem("buttonDisabledTimestamp");
-                                                            if (buttonDisabledTimestamp) {
-                                                                var currentTime = new Date().getTime();
-                                                                var timeDiff = currentTime - buttonDisabledTimestamp;
-                                                                if (timeDiff < 60000) { // 1 minute in milliseconds
-                                                                    document.getElementById("form-submit-btn").disabled = true;
-                                                                    document.getElementById("form-submit-btn").innerHTML='Message received. Thank you!';
-                                                                }
-                                                            }
-                                                        }
-                                                        checkButtonState();
-                                                    </script>
-
-                                                </div>
-
-
-
-
-                                            </form>
-                                        </div>
+                                        </form>
                                     </div>
-                                    <!-- END Contact Form -->
+                                </div>
+                                <script>
+                                    function validateEmail() {
+                                        var email = document.getElementById("email").value;
+                                        if (email.toLowerCase().includes("websolution")) {
+                                            window.location.href = "failed_spam.html";
+                                            return false;
+                                        }
+                                        disableButton();
+                                        return true;
+                                    }
+
+                                    function disableButton() {
+                                        document.getElementById("form-submit-btn").disabled = true;
+                                        document.getElementById("form-submit-btn").innerHTML = 'Message sent. Thank you!';
+
+                                        var timestamp = new Date().getTime();
+                                        localStorage.setItem("buttonDisabledTimestamp", timestamp);
+                                    }
+
+                                    // function checkButtonState() {
+                                    //     var buttonDisabledTimestamp = localStorage.getItem("buttonDisabledTimestamp");
+                                    //     if (buttonDisabledTimestamp) {
+                                    //         var currentTime = new Date().getTime();
+                                    //         var timeDiff = currentTime - buttonDisabledTimestamp;
+                                    //         if (timeDiff < 60000) { // 1 minute in milliseconds
+                                    //             document.getElementById("form-submit-btn").disabled = true;
+                                    //             document.getElementById("form-submit-btn").innerHTML='Message received. Thank you!';
+                                    //         }
+                                    //     }
+                                    // }
+                                    // checkButtonState();
+                                    function checkButtonState() {
+                                        var buttonDisabledTimestamp = localStorage.getItem("buttonDisabledTimestamp");
+                                        var disableSubmitButton = localStorage.getItem("disableSubmitButton");
+                                        if (buttonDisabledTimestamp || disableSubmitButton) {
+                                            var currentTime = new Date().getTime();
+                                            var timeDiff = currentTime - buttonDisabledTimestamp;
+                                            if (timeDiff < 60000 || disableSubmitButton) { // 1 minute in milliseconds
+                                                document.getElementById("form-submit-btn").disabled = true;
+                                                document.getElementById("form-submit-btn").innerHTML='Message received. Thank you!';
+                                            }
+                                        }
+                                    }
+                                    checkButtonState();
+
+                                </script>
+                            </div>
+                            <!-- END Contact Form -->
+
+
+
+
                             </div>
 
                     </div>
