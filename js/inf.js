@@ -40,7 +40,7 @@ fetch('../inf/inf.dat')
 
 
         // Use regular expressions to parse and extract the mailing address
-        const addressRegex = /Mailing_Address:\s*([\s\S]*?)(?=Email_address)/;
+        const addressRegex = /Mailing_Address:\s*([\s\S]*?)(?=Mailing_Address_usa)/;
         const parsedAddress = data.match(addressRegex)[1].trim();
 
         const mailingAddressOneLineElements = document.getElementsByClassName('mailing-address-one-line');
@@ -66,6 +66,32 @@ fetch('../inf/inf.dat')
             }
         }
 
+        // Use regular expressions to parse and extract the USA mailing address
+        const addressUsaRegex = /Mailing_Address_usa:\s*([\s\S]*?)(?=Email_address)/;
+        const parsedUsaAddress = data.match(addressUsaRegex)[1].trim();
+
+        const mailingAddressUsaOneLineElements = document.getElementsByClassName('mailing-address-usa-one-line');
+        const mailingAddressUsaOriginalElements = document.getElementsByClassName('mailing-address-usa-original');
+        const mailingAddressUsaOneLineLinkElements = document.getElementsByClassName('mailing-address-usa-one-line-link');
+        const encodedUsaMailingAddress = encodeURIComponent(parsedUsaAddress.replace(/\s*\n\s*/g, ', '));
+
+        for (let i = 0; i < mailingAddressUsaOneLineElements.length; i++) {
+            if (mailingAddressUsaOneLineElements[i]) {
+                mailingAddressUsaOneLineElements[i].textContent = parsedUsaAddress.replace(/\s*\n\s*/g, ', ');
+            }
+        }
+
+        for (let i = 0; i < mailingAddressUsaOriginalElements.length; i++) {
+            if (mailingAddressUsaOriginalElements[i]) {
+                mailingAddressUsaOriginalElements[i].innerHTML = parsedUsaAddress.replace(/\n/g, '<br>');
+            }
+        }
+
+        for (let i = 0; i < mailingAddressUsaOneLineLinkElements.length; i++) {
+            if (mailingAddressUsaOneLineLinkElements[i]) {
+                mailingAddressUsaOneLineLinkElements[i].setAttribute('href', `https://www.google.com/maps?q=${encodedUsaMailingAddress}`);
+            }
+        }
 
 
         // Use regular expressions to parse and extract all the email addresses

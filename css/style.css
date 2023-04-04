@@ -2827,3 +2827,25 @@ p.cursor::after {
 .cert_img:hover {
     filter: grayscale(0%);
 }
+
+/*======================
+    Mailing Address Side by Side - contact.html
+=======================*/
+.mailing-address-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Change from 'space-between' to 'flex-start' */
+    gap: 60px; /* Add gap between the addresses */
+}
+
+.mailing-address-item {
+    margin-bottom: 16px;
+    max-width: 400px; /* Set a maximum width for each address item */
+}
+
+@media (max-width: 768px) {
+    .mailing-address-item {
+        flex-basis: 100%;
+    }
+}
+
