@@ -187,13 +187,16 @@
                 <div style="margin-top: 10px;" class="glenn-flex-wrap">
                     <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInBottom">
                         <div class="glenn-card animate-box" data-animate-effect="fadeInBottom">
-                            <h5 style="display: block; float: right; margin-top: -40px; margin-bottom: -20px; background-color: #727272; color: whitesmoke; font-size: 0.8em">Professional Background</h5>
+                            <h5 class="about_blocktitle">Professional Background</h5>
+
                             <p style="float: left;">
                                 <img alt="self portrait of glenn" src="images/SelfPortraint_glenn_30.png" class="img-responsive glenn-dp">
+                                <span class="aboutme_text">
                                 I'm Glenn, an <a href="https://en.wikipedia.org/wiki/Engineering_technologist" target="_blank">Engineering Technologist</a> with experience in
                                 <strong>Aerospace & Defense</strong>, <strong>Aviation</strong>, <strong>Test Engineering</strong>, and <strong>Electronic Manufacturing</strong>.
                                 Innovation and problem-solving drive my enthusiasm, pushing me to constantly learn new technologies and processes.
                                 I embrace curiosity, fearlessly exploring, adapting, and creating opportunities for growth, both for my peers and myself no matter the challenge.
+                                </span>
                             </p>
 
 
@@ -249,7 +252,7 @@
 
 
                 <!-- CAREER STATS -->
-                <div class="career-stats-box animate-box" data-animate-effect="fadeInBottom">
+                <div class="career-stats-box animate-box hide-on-small-screen" data-animate-effect="fadeInBottom">
 
                     <div style="display: flex; justify-content: center; align-items: center; width: 100%">
                         <div class="career-stats-element no-border-left">
@@ -342,7 +345,7 @@
                             </div>
                         </li>
 
-                        <li class="glenn-card animate-box" data-animate-effect="fadeInBottom">
+                        <li class="glenn-card animate-box hide-on-small-screen" data-animate-effect="fadeInBottom">
                             <div class="direction-l">
                                 <div class="flag-wrapper">
                                     <span class="flag wbg">September 2013</span>
@@ -386,7 +389,7 @@
                             </div>
                         </li>
 
-                        <li class="glenn-card animate-box" data-animate-effect="fadeInBottom">
+                        <li class="glenn-card animate-box hide-on-small-screen" data-animate-effect="fadeInBottom">
                             <div class="direction-r">
                                 <div class="flag-wrapper">
                                     <span class="flag wbg">September 2009</span>
@@ -414,7 +417,7 @@
                             </div>
                         </li>
 
-                        <li class="glenn-card animate-box" data-animate-effect="fadeInBottom">
+                        <li class="glenn-card animate-box hide-on-small-screen" data-animate-effect="fadeInBottom">
                             <div class="direction-r">
                                 <div class="flag-wrapper">
                                     <span class="flag wbg">August 2007</span>
@@ -428,7 +431,7 @@
                             </div>
                         </li>
 
-                        <li class="glenn-card animate-box" data-animate-effect="fadeInBottom">
+                        <li class="glenn-card animate-box hide-on-small-screen" data-animate-effect="fadeInBottom">
                             <div class="direction-l">
                                 <div class="flag-wrapper">
                                     <span class="flag wbg">December 2006</span>
@@ -442,7 +445,7 @@
                             </div>
                         </li>
 
-                        <li class="glenn-card animate-box" data-animate-effect="fadeInBottom">
+                        <li class="glenn-card animate-box hide-on-small-screen" data-animate-effect="fadeInBottom">
                             <div class="direction-r">
                                 <div class="flag-wrapper">
                                     <span class="flag wbg">September 2004</span>
@@ -470,7 +473,8 @@
                                 <img src="images/icons/soldering.png" alt="soldering icon" style="position: absolute; top: 0; left: 0; z-index: 10; width: 8%; margin-top: -55px; margin-left: -20px; transform: rotate(5deg);">
                             </div>
                             -->
-                            <h5 style="font-size: 0.8em; display: flex; float: right; margin-top: -40px; margin-bottom: -20px; background-color: #727272; color: whitesmoke; clear: both">Self-directed proficiencies</h5>
+                            <h5 class="about_blocktitle_2">Self-directed proficiencies</h5>
+                            <hr class="hide-on-large-screen" style="background-color: #a2a2a2; height: 1px; width: 95%;">
                             <p style="float: left;">
                                 As a self-taught programmer, maintainer, and enthusiast of all things open-sourced,
                                 I also moonlight as an <strong>Embedded Systems Designer</strong>, cultivating my passion for programming and hardware design,
@@ -817,9 +821,12 @@
             dots: false, // set dots to false to remove dots
             responsive: {
                 0: {
-                    items: 4
+                    items: 3
                 },
-                768: {
+                375: {
+                    items: 3
+                },
+                500: {
                     items: 4
                 },
                 992: {

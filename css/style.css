@@ -2387,6 +2387,10 @@ p.cursor::after {
         width: 100%;
         margin-bottom: 10px;
     }
+
+    .aboutme_text {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -2736,7 +2740,62 @@ p.cursor::after {
     display: block;
 }
 
+/*======================
+    About Page CSS
+=======================*/
+.about_blocktitle {
+    display: inline-block;
+    float: right;
+    margin-top: -40px;
+    margin-bottom: -20px;
+    background-color: #727272 !important;
+    color: whitesmoke;
+    font-size: 0.8em !important;
+}
 
+.about_blocktitle_2 {
+    font-size: 0.8em !important;
+    display: flex;
+    float: right;
+    margin-top: -40px;
+    margin-bottom: -20px;
+    background-color: #727272 !important;
+    color: whitesmoke;
+    clear: both;
+}
+
+.hide-on-large-screen {
+    display: none;
+}
+
+@media (max-width: 389px) {
+    .about_blocktitle {
+        margin-top: -15px;
+        margin-bottom: -13px;
+        float: right;
+        display: inline-block;
+        background-color: transparent !important;
+        color: #727272;
+        font-size: 1em !important;
+    }
+
+    .about_blocktitle_2 {
+        font-size: 1em !important;
+        display: flex;
+        float: right;
+        margin-top: -10px;
+        margin-bottom: 5px;
+        background-color: transparent !important;
+        color: #727272;
+        clear: both;
+    }
+
+    .hide-on-large-screen {
+        display: block;
+    }
+
+
+}
 
 /*======================
     Certificate
