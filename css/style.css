@@ -2778,7 +2778,7 @@ p.cursor::after {
 }
 
 
-@media (max-width: 452px) {
+@media (max-width: 500px) {
     .about_blocktitle {
         margin-top: -15px;
         margin-bottom: -13px;
