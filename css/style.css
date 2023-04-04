@@ -2363,6 +2363,10 @@ p.cursor::after {
     float: left;
 }
 
+.hide-on-larger-screen {
+    display: none;
+}
+
 
 @media screen and (max-width: 510px) {
     .hide-on-small-screen {
@@ -2391,6 +2395,11 @@ p.cursor::after {
     .aboutme_text {
         display: inline-block;
     }
+
+    .hide-on-larger-screen {
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 440px) {
@@ -2768,6 +2777,7 @@ p.cursor::after {
     display: none;
 }
 
+
 @media (max-width: 430px) {
     .about_blocktitle {
         margin-top: -15px;
@@ -2793,7 +2803,6 @@ p.cursor::after {
     .hide-on-large-screen {
         display: block;
     }
-
 
 }
 
