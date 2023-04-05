@@ -6,9 +6,9 @@ FN:Test Lopez
 item1.EMAIL;type=INTERNET;type=pref:me@glennlopez.com
 item1.X-ABLabel:Email
 item2.TEL;type=pref:1-833-GHLOPEZ
-item2.X-ABLabel:Toll-Free
+item2.X-ABLabel:Phone (Toll-free)
 item3.TEL;type=pref:1-833-445-6739
-item3.X-ABLabel:Fax
+item3.X-ABLabel:SMS/MMS/Fax (Toll-free)
 item4.ADR;type=pref:;;1235 Notre-Dame St W\nUnit #330;Montreal;Quebec;H3C 0B1;Canada
 item4.X-ABLabel:Quebec Mailing Address
 item4.X-ABADR:ca
