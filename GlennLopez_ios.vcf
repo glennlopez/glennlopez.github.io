@@ -12,12 +12,15 @@ item3.X-ABLabel:Fax
 item4.ADR;type=pref:;;1235 Notre-Dame St W\nUnit #330;Montreal;Quebec;H3C 0B1;Canada
 item4.X-ABLabel:Mailing Address
 item4.X-ABADR:ca
-item5.URL;type=pref:https://github.com/glennlopez
-item5.X-ABLabel:Github
-item6.URL:https://glennlopez.com
-item6.X-ABLabel:Website
-item7.URL:https://www.linkedin.com/in/realglennlopez/
-item7.X-ABLabel:LinkedIn
+item5.ADR;type=pref:;;391 Las Colinas Blvd E\nSte 130 #4087;Irving;Texas;75039;United States
+item5.X-ABLabel:Mailing Address
+item5.X-ABADR:ca
+item6.URL;type=pref:https://github.com/glennlopez
+item6.X-ABLabel:Github
+item7.URL:https://glennlopez.com
+item7.X-ABLabel:Website
+item8.URL:https://www.linkedin.com/in/realglennlopez/
+item8.X-ABLabel:LinkedIn
 PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAA
  AAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABLKADAAQAAAABAA
  ABLAAAAAD/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcI

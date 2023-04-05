@@ -81,7 +81,7 @@
 }
 
 .footer-menu-list a:hover {
-    font-weight: bolder;
+    /*-- font-weight: bolder; --*/
     color: #dfdfdf;
 }
 
@@ -264,7 +264,7 @@
 }
 
 .store-mini-contact a:hover{
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #dadada;
 }
 
