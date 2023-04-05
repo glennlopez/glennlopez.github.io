@@ -10,10 +10,10 @@ item2.X-ABLabel:Toll-Free
 item3.TEL;type=pref:1-833-445-6739
 item3.X-ABLabel:Fax
 item4.ADR;type=pref:;;1235 Notre-Dame St W\nUnit #330;Montreal;Quebec;H3C 0B1;Canada
-item4.X-ABLabel:Mailing Address
+item4.X-ABLabel:Quebec Mailing Address
 item4.X-ABADR:ca
 item5.ADR;type=pref:;;391 Las Colinas Blvd E\nSte 130 #4087;Irving;Texas;75039;United States
-item5.X-ABLabel:Mailing Address
+item5.X-ABLabel:Texas Mailing Address
 item5.X-ABADR:ca
 item6.URL;type=pref:https://github.com/glennlopez
 item6.X-ABLabel:Github
