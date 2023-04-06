@@ -27,7 +27,7 @@ body {
     font-weight: 300;
     font-size: 20px;
     line-height: 1.6;
-    color: #7e7e7e;
+    color: #646464;
 }
 
 @media screen and (max-width: 992px) {
@@ -37,7 +37,7 @@ body {
 }
 
 a {
-    color: rgb(231, 86, 125);
+    color: rgb(230, 52, 58);
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -1972,7 +1972,7 @@ p.cursor::after {
     font-weight: lighter;
     font-size: small;
     font-style: italic;
-    color: #a5a5a5;
+    color: #808080;
 }
 
 @media screen and (max-width: 825px) {
