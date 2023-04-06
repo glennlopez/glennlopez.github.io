@@ -2821,7 +2821,7 @@ p.cursor::after {
     max-width: 120px;
     height: auto;
     opacity: 85%;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
 }
 
 .cert_img:hover {
