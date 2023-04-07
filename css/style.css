@@ -72,6 +72,10 @@ figure {
     width: 100%;
 }
 
+.g_logo {
+    width: 60%;
+}
+
 .videoBox{
     padding-bottom: 2.5em;
     /* float: left; */
