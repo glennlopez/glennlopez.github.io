@@ -233,9 +233,6 @@
                             </div>
 
 
-
-
-
                             <!-- Contact Form -->
                             <div id="glenn-contact-form" class="hide-on-tablet-screen glenn-contact-form">
                                 <h2 class="glenn-heading animate-box" data-animate-effect="fadeInLeft">Contact me</h2>
@@ -290,51 +287,6 @@
                                         </form>
                                     </div>
                                 </div>
-                                <script>
-                                    function validateEmail() {
-                                        var email = document.getElementById("email").value;
-                                        if (email.toLowerCase().includes("websolution")) {
-                                            window.location.href = "failed_spam.html";
-                                            return false;
-                                        }
-                                        disableButton();
-                                        return true;
-                                    }
-
-                                    function disableButton() {
-                                        document.getElementById("form-submit-btn").disabled = true;
-                                        document.getElementById("form-submit-btn").innerHTML = 'Message sent. Thank you!';
-
-                                        var timestamp = new Date().getTime();
-                                        localStorage.setItem("buttonDisabledTimestamp", timestamp);
-                                    }
-
-                                    // function checkButtonState() {
-                                    //     var buttonDisabledTimestamp = localStorage.getItem("buttonDisabledTimestamp");
-                                    //     if (buttonDisabledTimestamp) {
-                                    //         var currentTime = new Date().getTime();
-                                    //         var timeDiff = currentTime - buttonDisabledTimestamp;
-                                    //         if (timeDiff < 60000) { // 1 minute in milliseconds
-                                    //             document.getElementById("form-submit-btn").disabled = true;
-                                    //             document.getElementById("form-submit-btn").innerHTML='Message received. Thank you!';
-                                    //         }
-                                    //     }
-                                    // }
-                                    // checkButtonState();
-                                    function checkButtonState() {
-                                        var buttonDisabledTimestamp = localStorage.getItem("buttonDisabledTimestamp");
-                                        var disableSubmitButton = localStorage.getItem("disableSubmitButton");
-                                        if (buttonDisabledTimestamp || disableSubmitButton) {
-                                            var currentTime = new Date().getTime();
-                                            var timeDiff = currentTime - buttonDisabledTimestamp;
-                                            if (timeDiff < 60000 || disableSubmitButton) { // 1 minute in milliseconds
-                                                document.getElementById("form-submit-btn").disabled = true;
-                                                document.getElementById("form-submit-btn").innerHTML='Message received. Thank you!';
-                                            }
-                                        }
-                                    }
-                                    checkButtonState();
-                                </script>
                             </div>
                             <!-- END Contact Form -->
                         </div>
@@ -359,10 +311,10 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <!-- Counters -->
     <script src="js/jquery.countTo.js"></script>
-
     <!-- MAIN JS -->
     <script src="js/main.js"></script>
-
+    <!-- contact js -->
+    <script src="js/contact.js"></script>
     <!-- Info parser JS -->
     <script src="js/inf.js"></script>
 

@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!-->
 <!-- <html class="no-js" xmlns="http://www.w3.org/1999/html"> -->
 <html class="no-js" xmlns="http://www.w3.org/1999/xhtml" lang="en">
-
 <!--<![endif]-->
 
 <head>
@@ -16,7 +15,7 @@
     <meta name="description" content="Glenn Lopez personal website" />
     <meta name="keywords"
           content="glenn lopez, creative technologist, design, tech, hardware, startup" />
-    <meta name="author" content="Glenn Lopez" />
+    <meta name="author" content="Glenn Lopez"/>
 
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="" />
@@ -67,59 +66,10 @@
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3a94259f8f.js" crossorigin="anonymous"></script>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/3a94259f8f.js" crossorigin="anonymous"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-
-    <style>
-        .owl-carousel {
-            margin: 0 auto;
-            max-width: 1200px;
-            overflow: hidden;
-        }
-
-        .owl-carousel img {
-            width: auto;
-            max-height: 200px;
-            margin: 0 5px;
-            object-fit: cover;
-        }
-
-        .owl-carousel .owl-stage {
-            display: flex;
-            align-items: center;
-        }
-
-        .owl-carousel .owl-stage-outer {
-            overflow: hidden;
-        }
-
-        .owl-carousel .owl-nav button.owl-prev,
-        .owl-carousel .owl-nav button.owl-next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 0;
-            border: none;
-            background: none;
-            outline: none;
-            cursor: pointer;
-        }
-
-        .owl-carousel .owl-nav button.owl-prev {
-            left: 0;
-        }
-
-        .owl-carousel .owl-nav button.owl-next {
-            right: 0;
-        }
-    </style>
-
-
-
 
 </head>
 <body>
@@ -163,7 +113,6 @@
             </ul>
         </div>
         <!--/sse-->
-
     </aside>
 
 
@@ -195,8 +144,6 @@
                                 I embrace curiosity, fearlessly exploring, adapting, and creating opportunities for growth, both for my peers and myself no matter the challenge.
                                 </span>
                             </p>
-
-
 
                             <!-- Skills -->
                             <div class="hide-on-small-screen" style="padding-bottom: 10px;">
@@ -235,15 +182,10 @@
                                     -->
 
                                 </div>
-
-
-
-
                             </div>
                             <!-- End Skills -->
                         </div>
                     </div>
-
                 </div>
                 <!-- END MINI CARD -->
 
@@ -543,11 +485,6 @@
         </div>
 
 
-
-
-
-
-
         <div id="icebreakers" class="glenn-narrow-content glenn-border-bottom">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInLeft">
@@ -710,7 +647,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <!-- END CARDS -->
@@ -767,7 +703,6 @@
             </div>
         </div>
         <!-- END MORE ABOUT ME -->
-
     </div>
 </div>
 
@@ -791,64 +726,11 @@
 <!-- MAIN JS -->
 <script src="js/main.js"></script>
 
-<!-- Class Toggle for Nav selection element -->
-<script>
-    const elementToObserve1 = document.querySelector("#icebreakers_observe");
-    const elementToObserve2 = document.querySelector("#about_observe");
-
-    const elementToChange1 = document.querySelector("#nav_icebreaker");
-    const elementToChange2 = document.querySelector("#nav_about");
-
-
-    const observer1 = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                elementToChange1.classList.add("glenn-active");
-                elementToChange2.classList.remove("glenn-active");
-                observer1.unobserve(elementToObserve1);
-            }
-        });
-    });
-    observer1.observe(elementToObserve1);
-</script>
-<!-- END Class Toggle for Nav selection element -->
-
-<!-- Certificate Carousel -->
-<script>
-    $(document).ready(function() {
-        $(".owl-carousel").owlCarousel({
-            items: 5,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 2700,
-            autoplayHoverPause: true,
-            dots: false, // set dots to false to remove dots
-            responsive: {
-                0: {
-                    items: 3
-                },
-                375: {
-                    items: 3
-                },
-                500: {
-                    items: 4
-                },
-                992: {
-                    items: 5
-                },
-                1660: {
-                    items: 6
-                }
-            }
-        });
-    });
-</script>
-<!-- end Certificate Carousel -->
+<!-- About JS -->
+<script src="js/about.js"></script>
 
 <!-- Info parser JS -->
 <script src="js/inf.js"></script>
 
 </body>
-
 </html>
