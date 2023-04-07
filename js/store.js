@@ -1,3 +1,6 @@
+/*
+    Mailing address: auto hide non regional mailing address
+ */
 let canadaAddress = document.getElementById("canada-address"); // Get the DOM element for Canada address
 let usaAddress = document.getElementById("usa-address"); // Get the DOM element for USA address
 
