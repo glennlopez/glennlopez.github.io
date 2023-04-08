@@ -110,19 +110,29 @@
                             linkList.appendChild(listItem);
                           });
                           output.appendChild(linkList);
-                          const urls = linkItems.slice(); // make a copy of linkItems
-                          setTimeout(() => {
-                            const lastUrl = urls.pop();
-                            window.location.href = lastUrl;
-                          }, 2000);
+                          if (linkItems.length === 1) {
+                            window.location.href = linkItems[0];
+                          } else {
+                            const urls = linkItems.slice(); // make a copy of linkItems
+                            setTimeout(() => {
+                              const lastUrl = urls.pop();
+                              window.location.href = lastUrl;
+                            }, 5000);
+                          }
                         })
                         .catch(error => console.error(error));
               })
               .catch(error => console.error(error));
     }
   </script>
+
 </head>
 <body onload="getRawFile()">
-<div id="output"></div>
+<div>
+  Redirecting to the last link in the list...
+  <div style="font-size: small">(you have <strong>5 seconds</strong> to click other links in the list)</div>
+</div>
+<div style="font-size: small" id="output"></div>
+<div style="font-size: small">use <a href="https://glennlopez.com/url">ghlopez.com/url</a> to change the url above</div>
 </body>
 </html>
