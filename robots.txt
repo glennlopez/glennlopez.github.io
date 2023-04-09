@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /IVR/
+Disallow: /inf/
+Disallow: /.well-known/
+Disallow: /.idea/
+Disallow: /.git/
+Disallow: /.archive/
