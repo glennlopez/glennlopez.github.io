@@ -1,0 +1,156 @@
+/*======================
+    About Page CSS
+=======================*/
+.aboutMe_bodyStyle {
+    /* background: linear-gradient(287.83deg, #cac0bd, rgb(230, 226, 226)) !important; */
+}
+.about_blocktitle {
+    display: inline-block;
+    float: right;
+    margin-top: -40px;
+    margin-bottom: -20px;
+    background-color: #727272 !important;
+    color: whitesmoke;
+    font-size: 0.8em !important;
+}
+
+.about_blocktitle_2 {
+    font-size: 0.8em !important;
+    display: flex;
+    float: right;
+    margin-top: -40px;
+    margin-bottom: -20px;
+    background-color: #727272 !important;
+    color: whitesmoke;
+    clear: both;
+}
+
+.hide-on-large-screen {
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+    .about_blocktitle {
+        margin-top: -15px;
+        margin-bottom: -13px;
+        float: right;
+        display: inline-block;
+        background-color: transparent !important;
+        color: #727272;
+        font-size: 1em !important;
+    }
+
+    .about_blocktitle_2 {
+        font-size: 1em !important;
+        display: flex;
+        float: right;
+        margin-top: -10px;
+        margin-bottom: 5px;
+        background-color: transparent !important;
+        color: #727272;
+        clear: both;
+    }
+
+    .hide-on-large-screen {
+        display: block;
+    }
+
+}
+
+/*======================
+    Certificate
+=======================*/
+.cert_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cert_img {
+    margin: 2px;
+    width: 30%;
+    max-width: 120px;
+    height: auto;
+    opacity: 85%;
+    filter: grayscale(0%);
+}
+
+.cert_img:hover {
+    filter: grayscale(0%);
+}
+
+
+/*======================
+    Skills
+=======================*/
+.gtitle-container {
+    margin-bottom: -35px;
+    margin-left: 10%;
+    z-index: 20;
+}
+
+.gtitle {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.glabel {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #808080;
+    padding: 2px 7px;
+    font-size: small;
+    color: white;
+    font-weight: bolder;
+}
+.ind-1 { /* DevOps */
+    background-color: #434343;
+}
+
+.glabel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: lightgray;
+}
+
+/*======================
+    Icebreaker
+=======================*/
+
+@media screen and (max-width: 1200px) {
+    .col-md-6 {
+        width: 100%;
+    }
+
+}
+
+/*======================
+    Website Credits
+=======================*/
+.glenn-website-credits {
+    display: block;
+    align-items: center;
+    width: 85%;
+    margin: 5px auto 0;
+    font-size: small;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .glenn-website-credits {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .glenn-website-credits {
+        width: 100%;
+    }
+}
