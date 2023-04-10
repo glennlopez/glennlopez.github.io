@@ -23,33 +23,39 @@ fetch('https://ipapi.co/json/') // Fetch the user's IP geolocation data
 
 
 
-// Function to show or hide the Crisp Chat widget
-function setCrispChatVisibility(visible) {
-    if (window.$crisp) {
-        window.$crisp.push(["do", visible ? "chat:show" : "chat:hide"]);
+let isChatScriptLoaded = false;
+
+function loadCrispChatScript() {
+    if (!isChatScriptLoaded) {
+        const script = document.createElement('script');
+        script.id = 'crisp-chat-script';
+        script.type = 'text/javascript';
+        script.src = 'https://client.crisp.chat/l.js';
+        script.async = 1;
+        document.head.appendChild(script);
+        isChatScriptLoaded = true;
     }
 }
 
-// Get the footer element
-const footer = document.getElementById("footer-copyright-001");
+function initCrispChat() {
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = '3018c10c-34cd-41c1-a2d1-db990e8b96ad';
+    loadCrispChatScript();
+}
 
-// Set up the Intersection Observer
+const footer = document.getElementById('footer-copyright-001');
+
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                // If the footer is in view, hide the chat widget
-                setCrispChatVisibility(false);
-            } else {
-                // If the footer is not in view, show the chat widget
-                setCrispChatVisibility(true);
+            if (!entry.isIntersecting && !isChatScriptLoaded) {
+                initCrispChat();
             }
         });
     },
     {
-        threshold: 0, // Adjust the threshold value as needed (0 means when any part of the footer element is in view)
+        threshold: 0,
     }
 );
 
-// Start observing the footer
 observer.observe(footer);
