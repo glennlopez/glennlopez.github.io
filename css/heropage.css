@@ -27,8 +27,13 @@
     border-radius: 6px;
     padding-left: 7px;
     padding-right: 7px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+@media screen and (max-width: 768px) {
+    .hero-header-highlight {
+        font-size: 78%;
+    }
 }
 
 .hero-main-header {
