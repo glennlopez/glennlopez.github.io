@@ -19,3 +19,38 @@ fetch('https://ipapi.co/json/') // Fetch the user's IP geolocation data
         }
     })
     .catch(error => console.error(error)); // Log any errors to the console
+
+
+
+
+// Function to disable the script
+function disableScript(scriptElement) {
+    scriptElement.remove();
+}
+
+// Get the script to disable
+const scriptToDisable = document.getElementById('script-to-disable');
+
+// Get the footer element
+const footer = document.getElementById('footer-copyright');
+
+// Set up the Intersection Observer
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // If the footer is in view, disable the script
+                disableScript(scriptToDisable);
+
+                // Unobserve the footer (optional, but recommended to stop observing after the script is disabled)
+                observer.unobserve(footer);
+            }
+        });
+    },
+    {
+        threshold: 0.1, // Adjust the threshold value as needed (0.1 means 10% visibility of the footer element)
+    }
+);
+
+// Start observing the footer
+observer.observe(footer);

@@ -2756,6 +2756,9 @@ p.cursor::after {
 /*======================
     About Page CSS
 =======================*/
+.aboutMe_bodyStyle {
+   /* background: linear-gradient(287.83deg, #cac0bd, rgb(230, 226, 226)) !important; */
+}
 .about_blocktitle {
     display: inline-block;
     float: right;
