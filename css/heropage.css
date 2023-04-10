@@ -21,6 +21,7 @@
 }
 
 .hero-header-highlight {
+    position: relative;
     color: #F4F5F5;
     background-color: #2d2a2e;
     display: inline-block;
@@ -30,6 +31,19 @@
     padding-top: 5px;
     padding-bottom: 7px;
 }
+
+.hero-header-highlight::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 105%; /* Adjusted to add a small gap between the background and the shadow */
+    height: 50%;
+    border-radius: 6px;
+    background: linear-gradient(to bottom, rgba(45, 42, 46, 0.15), rgba(45, 42, 46, 0)); /* Made the reflection more faded */
+}
+
+
 @media screen and (max-width: 768px) {
     .hero-header-highlight {
         font-size: 78%;
