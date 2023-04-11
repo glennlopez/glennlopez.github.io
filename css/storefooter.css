@@ -287,7 +287,12 @@
     padding-bottom: 220px; /* bottom clipping fix  */
 }
 
-
+.footer-background {
+    background-image: url('/images/g_logo.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 3%;
+}
 
 @media screen and (max-width: 1200px) {
     .footer {
@@ -301,11 +306,19 @@
     .footer-special {
         margin-top: -20px;
     }
+
+    .footer-background {
+        background-size: 7%;
+    }
 }
 
 @media screen and (max-width: 991px) {
     .footer-content {
         padding: 5px 15px 280px;
+    }
+
+    .footer-background {
+        background-size: 15%;
     }
 }
 
@@ -327,10 +340,15 @@
     }
 }
 
-
-.footer-background {
-    background-image: url('https://glennlopez.com/images/g_logo.svg');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 60%;
+@media screen and (max-width: 510px) {
+    .footer-background {
+        background-size: 40%;
+    }
 }
+
+@media screen and (max-width: 366px) {
+    .footer-background {
+        background-size: 50%;
+    }
+}
+
