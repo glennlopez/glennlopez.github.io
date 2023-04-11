@@ -326,3 +326,11 @@
         padding: 5px 15px 200px;
     }
 }
+
+
+.footer-background {
+    background-image: url('https://glennlopez.com/images/g_logo.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 60%;
+}
