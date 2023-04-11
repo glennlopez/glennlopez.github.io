@@ -2547,9 +2547,12 @@ p.cursor::after {
     border-color: #f9f9f9 transparent transparent transparent;
 }
 
+.hover-text {
+    position: relative;
+    display: inline-block;
+}
+
 .hover-text:hover .bubble-alert {
     display: block;
 }
-
-
 
