@@ -342,13 +342,13 @@
 
 @media screen and (max-width: 510px) {
     .footer-background {
-        background-size: 40%;
+        background-size: 70%;
     }
 }
 
 @media screen and (max-width: 366px) {
     .footer-background {
-        background-size: 50%;
+        background-size: 60%;
     }
 }
 
