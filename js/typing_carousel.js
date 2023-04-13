@@ -7,9 +7,12 @@ var i = 0,
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
     "code",
+    "prototype",
     "design",
     "automate",
     "innovate",
+    "mechanize",
+    "digitize",
     "fabricate",
 ];
 
