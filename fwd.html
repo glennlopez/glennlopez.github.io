@@ -117,7 +117,7 @@
                             setTimeout(() => {
                               const lastUrl = urls.pop();
                               window.location.href = lastUrl;
-                            }, 5000);
+                            }, 7000);
                           }
                         })
                         .catch(error => console.error(error));
@@ -130,7 +130,7 @@
 <body onload="getRawFile()">
 <div>
   Redirecting to the last link in the list...
-  <div style="font-size: small">(you have <strong>5 seconds</strong> to click other links in the list)</div>
+  <div style="font-size: small">(you have <strong>7 seconds</strong> to click other links in the list)</div>
 </div>
 <div style="font-size: small" id="output"></div>
 <div style="font-size: small">use <a href="https://glennlopez.com/url">ghlopez.com/url</a> to change the url above</div>
