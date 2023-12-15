@@ -11,9 +11,6 @@ var textArray = [
     "design",
     "automate",
     "innovate",
-    "mechanize",
-    "digitize",
-    "fabricate",
 ];
 
 // Speed (in milliseconds) of typing.
