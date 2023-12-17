@@ -215,7 +215,7 @@
                                             </section>
 
                                             <span style="font-size: small; line-height: 1.2; max-width: 400px; display: inline-block;">
-                                                Use the short-urls above👆 on your mobile device for a more convenient way to get in-touch. Type less, save time.
+                                                Use the short-urls above👆 on your mobile device for a convenient way to get in-touch. Type less, save time. <a href="#" id="toggleList">[list all short-urls]</a>
                                                 <!--It's less typing, less memorization, less mistakes, less frustration, more time saved.-->
                                             </span>
 
@@ -225,8 +225,98 @@
                                                 If you no longer wish to receive text messages, you may opt out at any time by replying "STOP".
                                             </span>
                                             -->
+                                            <br>
 
-                                            <br><br>
+
+
+
+                                            <!-- SHORT URL HELPER-->
+                                            <!-- Wrapper div for the list -->
+                                            <!-- TODO place the style in contact.css file-->
+                                            <!-- TODO place the js in contact.js-->
+                                            <style>
+                                                .short-url-list-wrapper {
+                                                    display: none;
+                                                }
+                                            </style>
+                                            <div class="short-url-list-wrapper">
+                                                <ol class="short-url-list">
+                                                    <li>/call<br/>
+                                                        <small>
+                                                            Pre-dials my phone number on your default phone app.
+                                                        </small>
+    
+                                                    <li>/sms <span style="font-size: small; font-weight:bold">or</span> /message <span style="font-size: small; font-weight:bold">or</span> /text<br/>
+                                                        <small>
+                                                            Opens your default sms app with my phone number pre-filled.
+                                                        </small>
+    
+                                                    <li>/chat<br/>
+                                                        <small>
+                                                            Takes you to a private chat room on your browser.
+                                                        </small>
+                                                    
+                                                    <li>/encrypted-chat <span style="font-size: small; font-weight:bold">or</span> /signal<br/>
+                                                        <small>
+                                                            Opens Signal app with my phone number pre-filled.
+                                                        </small>
+    
+                                                     <li>/help <span style="font-size: small; font-weight:bold">or</span> /bug <span style="font-size: small; font-weight:bold">or</span> /discord <br/>
+                                                         <small>
+                                                             Takes you to my Discord server for technical support.
+                                                         </small>        
+                                                    
+                                                    <li>/email<br/>
+                                                        <small>
+                                                            Opens your default email app with my email address pre-filled.
+                                                        </small>
+    
+    
+                                                    <li>/pay <span style="font-size: small; font-weight:bold">or</span> /stripe <span style="font-size: small; font-weight:bold">or</span> /square<br>
+                                                        <small>
+                                                           Secure payment with MasterCard, Visa, and similar cards. Alternatively, you can also use to any of the following:
+                                                        </small>
+                                                        <ol>
+                                                            <li>/paypal <small>- send money through Paypal page.</small>
+                                                            <li>/zelle <small>- send money through Zelle.</small>
+                                                            <li>/venmo <small>- send money through Venmo.</small>
+                                                        </ol>
+                                                    </li>
+    
+                                                    <li>/upload <span style="font-size: small; font-weight:bold">or</span> /send<br/>
+                                                        <small>
+                                                            If you need to send me large files, this is the easiest way to do it.
+                                                        </small>
+    
+                                                    <li>/files<br/>
+                                                        <small>
+                                                            Where you can download files I've shared with you.
+                                                        </small>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <br>
+
+                                            <script>
+                                                // JavaScript to handle the toggle functionality
+                                                document.getElementById('toggleList').addEventListener('click', function (e) {
+                                                    e.preventDefault();
+                                                    var listWrapper = document.querySelector('.short-url-list-wrapper');
+                                                    if (listWrapper.style.display === 'none' || listWrapper.style.display === '') {
+                                                        listWrapper.style.display = 'block';
+                                                    } else {
+                                                        listWrapper.style.display = 'none';
+                                                    }
+                                                });
+                                            </script>
+
+
+
+                                        
+
+
+
+
 
                                             <!-- Mailing Address -->
                                             <span class="mailing-address-container">
