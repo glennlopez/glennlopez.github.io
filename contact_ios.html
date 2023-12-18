@@ -173,7 +173,8 @@
                                     </section>
 
                                     <span style="font-size: small; line-height: 1.2; max-width: 400px; display: inline-block;">
-                                        Use the short-urls above👆 for a convenient way to get in-touch with me using your iOS device.
+                                        Use the short-urls above👆 for a convenient way to get in-touch with me using your iOS device. 
+                                        <div style="display: inline-block;"><a href="#" id="toggleList">🔎︎ Show all</a></div>
                                     </span>
 
                                     <!--
@@ -182,6 +183,43 @@
                                             If you no longer wish to receive text messages, you may opt out at any time by replying "STOP".
                                     </span>
                                     -->
+
+                                    <!-- SHORT URL HELPER-->
+                                    <div class="short-url-list-wrapper">
+                                        <ol class="short-url-list">
+                                            <li>/call<br/>
+                                                <small>Pre-dials my phone number on your default phone app.</small>
+                                            <li>/sms <span class="short-url-or">or</span> /message <span class="short-url-or">or</span> /text<br/>
+                                                <small>Opens your default sms app with my phone number pre-filled.</small>
+                                            <li>/chat<br/>
+                                                <small>Takes you to a private chat room on your browser.</small>
+                                            <li>/encrypted-chat <span class="short-url-or">or</span> /signal<br/>
+                                                <small>Opens Signal app with my phone number pre-filled.</small>
+                                            <li>/help <span class="short-url-or">or</span> /bug <span class="short-url-or">or</span> /discord <br/>
+                                                <small>Takes you to my Discord server for technical support.</small>        
+                                            <li>/email<br/>
+                                                <small>Opens your default email app with my email address pre-filled.</small>
+                                            <li>/pay <span class="short-url-or">or</span> /stripe <span class="short-url-or">or</span> /square<br>
+                                                <small>Secure payment methods for MasterCard, Visa, and similar cards. Also supported are peer-to-peer payment methods:</small>
+                                                
+                                                <ul>
+                                                    <li>/paypal <small>- takes you to my <strong>PayPal.Me</strong> page.</small>
+                                                    <li>/zelle <small>- takes you to my <strong>Zelle</strong> QR code and link.</small>
+
+                                                    <li>/venmo <small>- takes you to my <strong>Venmo</strong> QR code and link.</small> <!--todo: add page-->
+                                                    <li>/cash <small>- takes you to <strong>CashApp</strong> with my username pre-filled.</small> <!--todo: add page-->
+                                                    <li>/googlepay <small>- takes to to my <strong>GooglePay</strong> QR code and link.</small>  <!--todo: add page-->
+                                                    <li>/applepay <small>- coming soon... </small>  <!--todo: add page-->
+                                                </ul>
+                                        
+                                            <li>/upload <span class="short-url-or">or</span> /send<br/>
+                                                <small>If you need to send me large files, this is the easiest way to do it.</small>
+                                            <li>/files<br/>
+                                                <small>Where you can download files I've shared with you.</small>     
+                                        </ol>
+                                    </div>
+                                    <!-- END SHORT URL HELPER-->
+                                    
 
                                     <br><br>
 
@@ -249,6 +287,9 @@
 
     <!-- MAIN JS -->
     <script src="js/main.js"></script>
+
+    <!-- contact js -->
+    <script src="js/contact.js"></script>
 
     <!-- Redirect mobile devices after page load
     <script language=javascript>
