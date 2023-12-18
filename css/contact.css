@@ -148,11 +148,13 @@
 	letter-spacing: -0.03em;
 }
 
+
 section {
 	display: grid;
 	grid-template-columns: max-content max-content;
 	gap: 0.1vw;
 }
+
 
 .contact-height-container {
 	height: 0;
@@ -172,6 +174,10 @@ ul.contact-ul-slider {
 	padding: 0;
 	list-style-type: none;
 	animation: listSlider 12s cubic-bezier(0.7, 0.1, 0.1, 1) infinite;
+}
+ul.contact-ul-slider a {
+    color: gray; 
+    text-decoration: none;
 }
 
 @keyframes listSlider {
@@ -208,12 +214,14 @@ ul.contact-ul-slider {
 
 .short-url-list-wrapper {
     display: none; /* initially hidden */
+    font-size: small;
 }
 
 ol.short-url-list {
     counter-reset: li;
     padding-left: 2.5rem;
-    padding: .25rem 0 .25rem 3.75rem; }
+    padding: .25rem 0 .25rem 3.75rem; 
+}
 
 ol.short-url-list small {
     color: #b1b0b0; 
@@ -221,43 +229,49 @@ ol.short-url-list small {
 }
 
 ol.short-url-list ol, ol.short-url-list ul {
-      padding: .75rem 0 0 1.5rem; }
+      padding: .75rem 0 0 1.5rem; 
+}
 
 ol.short-url-list li {
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem; /* space between each list */ 
+}
 
 ol.short-url-list > li {
       position: relative;
       counter-increment: li;
-      min-height: 4rem;
+      min-height: 4rem; /* min height of line */
       padding-top: 0;
-      list-style: none; }
+      list-style: none; 
+}
 
 ol.short-url-list > li::before, ol.short-url-list > li::after {
         position: absolute;
         display: flex;
-        opacity: 0.35; }
+        opacity: 0.35; 
+}
 
 ol.short-url-list > li::before {
         content: counter(li);
-        left: -2.75rem;
+        left: -2.75rem; /* position of circle */
         top: 0;
-        height: calc(2.4rem - 1px);
-        width: calc(2.4rem - 1px);
+        height: calc(2.0rem - 1px); /* circle size */
+        width: calc(2.0rem - 1px);  /* circle size */
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        border: 1px solid currentcolor; }
+        border: 1px solid currentcolor; 
+}
 
 ol.short-url-list > li::after {
         content: '';
         left: -1.75rem;
-        top: calc(2rem + 3px);
-        height: calc(100% - 2.5rem);
-        border-left: 1px solid currentcolor; }
+        top: calc(1.2rem + 7px); /* position of line */
+        height: calc(100% - 1.65rem); /* height of line */
+        border-left: 1px solid currentcolor; 
+}
 
-.short-url-or {
+.short-url-or { /* OR text */
     font-size: small; 
-    font-weight:bold;
+    font-weight: bold;
 }
   
