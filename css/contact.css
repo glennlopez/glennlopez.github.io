@@ -10,13 +10,14 @@
 
 .mailing-address-item {
     display: inline-block;
-    margin-bottom: 16px;
+    margin-top: 14px;
+    margin-bottom: 12px;
     max-width: 400px; /* Set a maximum width for each address item */
 }
 
 @media (max-width: 1210px) {
     .mailing-address-container {
-        gap: 16px; /* Reduce gap between the addresses when they are stacked */
+        gap: 0px; /* Reduce gap between the addresses when they are stacked */
     }
 
     .mailing-address-item {
