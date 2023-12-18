@@ -1,4 +1,4 @@
-<!-- Form scripts -->
+/* Form scripts */
 function validateEmail() {
     var email = document.getElementById("email").value;
     if (email.toLowerCase().includes("websolution")) {
@@ -42,3 +42,14 @@ function checkButtonState() {
     }
 }
 checkButtonState();
+
+// JavaScript to handle the toggle functionality
+document.getElementById('toggleList').addEventListener('click', function (e) {
+    e.preventDefault();
+    var listWrapper = document.querySelector('.short-url-list-wrapper');
+    if (listWrapper.style.display === 'none' || listWrapper.style.display === '') {
+        listWrapper.style.display = 'block';
+    } else {
+        listWrapper.style.display = 'none';
+    }
+});

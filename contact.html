@@ -229,16 +229,7 @@
 
 
 
-
                                             <!-- SHORT URL HELPER-->
-                                            <!-- Wrapper div for the list -->
-                                            <!-- TODO place the style in contact.css file-->
-                                            <!-- TODO place the js in contact.js-->
-                                            <style>
-                                                .short-url-list-wrapper {
-                                                    display: none;
-                                                }
-                                            </style>
                                             <div class="short-url-list-wrapper">
                                                 <ol class="short-url-list">
                                                     <li>/call<br/>
@@ -246,7 +237,7 @@
                                                             Pre-dials my phone number on your default phone app.
                                                         </small>
     
-                                                    <li>/sms <span style="font-size: small; font-weight:bold">or</span> /message <span style="font-size: small; font-weight:bold">or</span> /text<br/>
+                                                    <li>/sms <span class="short-url-or">or</span> /message <span class="short-url-or">or</span> /text<br/>
                                                         <small>
                                                             Opens your default sms app with my phone number pre-filled.
                                                         </small>
@@ -256,12 +247,12 @@
                                                             Takes you to a private chat room on your browser.
                                                         </small>
                                                     
-                                                    <li>/encrypted-chat <span style="font-size: small; font-weight:bold">or</span> /signal<br/>
+                                                    <li>/encrypted-chat <span class="short-url-or">or</span> /signal<br/>
                                                         <small>
                                                             Opens Signal app with my phone number pre-filled.
                                                         </small>
     
-                                                     <li>/help <span style="font-size: small; font-weight:bold">or</span> /bug <span style="font-size: small; font-weight:bold">or</span> /discord <br/>
+                                                     <li>/help <span class="short-url-or">or</span> /bug <span class="short-url-or">or</span> /discord <br/>
                                                          <small>
                                                              Takes you to my Discord server for technical support.
                                                          </small>        
@@ -272,18 +263,21 @@
                                                         </small>
     
     
-                                                    <li>/pay <span style="font-size: small; font-weight:bold">or</span> /stripe <span style="font-size: small; font-weight:bold">or</span> /square<br>
+                                                    <li>/pay <span class="short-url-or">or</span> /stripe <span class="short-url-or">or</span> /square<br>
                                                         <small>
-                                                           Secure payment with MasterCard, Visa, and similar cards. Alternatively, you can also use to any of the following:
+                                                           Secure payment with MasterCard, Visa, and similar cards. Alternatively, you can also use any of the following for peer-to-peer payment:
                                                         </small>
                                                         <ol>
                                                             <li>/paypal <small>- send money through Paypal page.</small>
                                                             <li>/zelle <small>- send money through Zelle.</small>
                                                             <li>/venmo <small>- send money through Venmo.</small>
+                                
+                                                            <li>/cash <small>- send money through CashApp.</small> 
+                                                            <li>/googlepay <small>- send money through GooglePay.</small>   
                                                         </ol>
                                                     </li>
     
-                                                    <li>/upload <span style="font-size: small; font-weight:bold">or</span> /send<br/>
+                                                    <li>/upload <span class="short-url-or">or</span> /send<br/>
                                                         <small>
                                                             If you need to send me large files, this is the easiest way to do it.
                                                         </small>
@@ -296,25 +290,6 @@
                                                 </ol>
                                             </div>
                                             <br>
-
-                                            <script>
-                                                // JavaScript to handle the toggle functionality
-                                                document.getElementById('toggleList').addEventListener('click', function (e) {
-                                                    e.preventDefault();
-                                                    var listWrapper = document.querySelector('.short-url-list-wrapper');
-                                                    if (listWrapper.style.display === 'none' || listWrapper.style.display === '') {
-                                                        listWrapper.style.display = 'block';
-                                                    } else {
-                                                        listWrapper.style.display = 'none';
-                                                    }
-                                                });
-                                            </script>
-
-
-
-                                        
-
-
 
 
 

@@ -203,8 +203,12 @@ ul.contact-ul-slider {
 	}
 }
 /*======================
-    Short URLs
+    Short URL List
 =======================*/
+
+.short-url-list-wrapper {
+    display: none; /* initially hidden */
+}
 
 ol.short-url-list {
     counter-reset: li;
@@ -251,4 +255,9 @@ ol.short-url-list > li::after {
         top: calc(2rem + 3px);
         height: calc(100% - 2.5rem);
         border-left: 1px solid currentcolor; }
+
+.short-url-or {
+    font-size: small; 
+    font-weight:bold;
+}
   
