@@ -1,5 +1,30 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Redirecting...</title>
-<meta http-equiv="refresh" content="0; URL=venmo://paycharge?txn=pay&recipients=glennlopez">
-<link rel="canonical" href="venmo://paycharge?txn=pay&recipients=glennlopez">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    function redirectToVenmo() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Check if the user agent contains 'Android' or 'iOS'
+      if (/android/i.test(userAgent)) {
+        window.location.href = 'venmo://paycharge?txn=pay&recipients=glennlopez';
+      } else if (/iPad|iPhone|iPod/i.test(userAgent)) {
+        window.location.href = 'venmo://paycharge?txn=pay&recipients=glennlopez';
+      } else {
+        // If not Android or iOS, redirect to google.com
+        window.location.href = 'https://venmo.com/u/glennlopez';
+      }
+    }
+
+    // Call the function when the page loads
+    window.onload = redirectToVenmo;
+  </script>
+  <link rel="canonical" href="venmo://paycharge?txn=pay&recipients=glennlopez">
+</head>
+<body>
+  <!-- Optional: You can include a message for users who are not redirected -->
+  <p>If you are not redirected, <a href="https://venmo.com/u/glennlopez">click here</a>.</p>
+</body>
+</html>
