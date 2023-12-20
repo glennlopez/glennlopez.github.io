@@ -62,10 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleListLink.addEventListener("click", function () {
         if (toggleListContainer.style.display === "none" || toggleListContainer.style.display === "") {
             toggleListContainer.style.display = "block";
-            toggleListLink.textContent = "ⓘ Hide all short URLs";
+            toggleListLink.textContent = "ⓘ Hide short-URL info";
         } else {
             toggleListContainer.style.display = "none";
-            toggleListLink.textContent = "ⓘ Show all short URLs";
+            toggleListLink.textContent = "ⓘ Show short-URL info";
         }
     });
 });
