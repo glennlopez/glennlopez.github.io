@@ -1,5 +1,30 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Redirecting...</title>
-<meta http-equiv="refresh" content="0; URL=https://cash.app/$glennlopezcom">
-<link rel="canonical" href="https://cash.app/$glennlopezcom">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    function redirect() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Check if the user agent contains 'Android' or 'iOS'
+      if (/android/i.test(userAgent)) {
+        window.location.href = 'cashme://cash.me/$glennlopezcom';
+      } else if (/iPad|iPhone|iPod/i.test(userAgent)) {
+        window.location.href = 'cashme://cash.me/$glennlopezcom';
+      } else {
+        // If not Android or iOS, redirect to google.com
+        window.location.href = 'https://cash.app/$glennlopezcom';
+      }
+    }
+
+    // Call the function when the page loads
+    window.onload = redirect;
+  </script>
+  <link rel="canonical" href="venmo://paycharge?txn=pay&recipients=glennlopez">
+</head>
+<body>
+  <!-- Optional: You can include a message for users who are not redirected -->
+  <p>If you are not redirected, <a href="https://cash.app/$glennlopezcom">click here</a>.</p>
+</body>
+</html>
