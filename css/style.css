@@ -2045,6 +2045,12 @@ p.cursor::after {
     /* z-index: 1; */
 }
 
+@media screen and (max-width: 510px) {
+    .timeline:before {
+        display: none;
+    }
+}
+
 .timeline li {
     /* padding: 1em 0; */
 }
