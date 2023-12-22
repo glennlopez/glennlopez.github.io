@@ -2047,7 +2047,7 @@ p.cursor::after {
 
 @media screen and (max-width: 510px) {
     .timeline:before {
-        display: none;
+        display: none; 
     }
 }
 
