@@ -5,3 +5,4 @@ Disallow: /.well-known/
 Disallow: /.idea/
 Disallow: /.git/
 Disallow: /.archive/
+Disallow: /aiFood/
