@@ -64,6 +64,7 @@ a {
     transition: 0.5s;
 }
 
+
 a:hover,
 a:active,
 a:focus {
@@ -105,6 +106,10 @@ figure {
 
 .g_logo {
     width: 60%;
+}
+
+.error404 {
+    color: rgb(230, 52, 58);
 }
 
 .videoBox {
@@ -2766,7 +2771,7 @@ p.cursor::after {
                                 <p class="p-a">
                                     That page doesn't exist</p>
                                 <p class="p-b">
-                                    Check the URL or <a href="index.html">go back to homepage</a>
+                                    Check the URL or <a class="error404" href="index.html">go back to homepage</a>
                                 </p>
                                 <a href="javascript:history.back()" class="back">Previous page</a>
                             </div>
