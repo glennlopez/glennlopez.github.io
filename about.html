@@ -216,12 +216,17 @@
                                 // Get the current year
                                 const currentYear = new Date().getFullYear();
 
-                                // Calculate the number of years since 2011
-                                const yearsSince2011 = currentYear - 2011;
+                                // Set the starting year of experience - adjusted for gap years
+                                const startYear = 2012;
 
-                                // Set the career stats number to the calculated value
+                                // Calculate the number of years since the start year
+                                const yearsSinceStart = currentYear - startYear;
+
+                                // Set the career stats element by its ID
                                 const careerStatsNumber = document.getElementById("career-stats");
-                                careerStatsNumber.textContent = Math.min(yearsSince2011 + 1, 12);
+
+                                // Update the text content with the calculated value, capped at 12 years
+                                careerStatsNumber.textContent = Math.min(yearsSinceStart + 1, 99);
                             </script>
 
                             <span class="career-stats-desc">years <br>work exp</span>
