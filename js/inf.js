@@ -97,6 +97,7 @@ fetch('../inf/inf.dat')
         // Use regular expressions to parse and extract all the email addresses
         const emailRegexes = {
             main: /Email_address_main:\s*([\w.-]+@[\w.-]+\.\w+)/,
+            encrypted: /Email_address_encrypted:\s*([\w.-]+@[\w.-]+\.\w+)/,
             support: /Email_address_support:\s*([\w.-]+@[\w.-]+\.\w+)/,
             store: /Email_address_store:\s*([\w.-]+@[\w.-]+\.\w+)/,
             info: /Email_address_info:\s*([\w.-]+@[\w.-]+\.\w+)/,
